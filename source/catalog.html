@@ -8,10 +8,13 @@
   <body>
     <header class="header">
       <div class="header__logo logo">
-        <a class="" href="index.html">Cat Energy</a>
-        <a class="logo__text" href="index.html"
-          ><img src="https://via.placeholder.com/150x150" alt=""
-        /></a>
+        <a class="logo__link" href="index.html"
+          ><img
+            class="logo__image"
+            src="https://via.placeholder.com/150x150"
+            alt="Логотип Cat Energy"
+          /></a
+        >
       </div>
       <button class="header__toggle menu-button" type="button"></button>
       <nav class="header__navigation">
@@ -20,7 +23,7 @@
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог продукции</a>
+            <a class="site-list__link">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -35,13 +38,15 @@
         <h2 class="catalog__heading visually-hidden">Основные товары</h2>
         <ul class="catalog__list catalog__list--main">
           <li class="catalog__item main-card">
-            <img
-              class="main-card__image"
-              src="https://via.placeholder.com/150x150"
-              alt="Cat Energy
+            <a class="main-card__link" href="">
+              <img
+                class="main-card__image"
+                src="https://via.placeholder.com/150x150"
+                alt="Cat Energy
           PRO 500 г"
-            />
-            <h3 class="main-card__heading">Cat Energy PRO 500 г</h3>
+              />
+              <h3 class="main-card__heading">Cat Energy PRO 500 г</h3>
+            </a>
             <table class="main-card__table">
               <tr class="main-card__row">
                 <th class="main-card__name">Объем</th>
@@ -78,7 +83,14 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="" href="index.html">Cat Energy</a>
+      <div class="footer__logo logo">
+        <a class="logo__link" href="index.html"
+          ><img
+            class="logo__image"
+            src="https://via.placeholder.com/150x150"
+            alt="Логотип Cat Energy"
+        /></a>
+      </div>
       <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vk" href="">VK</a>
@@ -91,9 +103,8 @@
         </li>
       </ul>
       <div class="footer__academy academy">
-        <a class="academy__text" href="htmlacademy.ru">HTML Academy</a>
-        <a class="academy__icon" href=""
-          ><img src="https://via.placeholder.com/150x150" alt=""
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive"
+          >HTML Academy<img src="https://via.placeholder.com/150x150" alt="Логотип Академии"
         /></a>
       </div>
     </footer>
