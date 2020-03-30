@@ -13,8 +13,7 @@
             class="logo__image"
             src="https://via.placeholder.com/150x150"
             alt="Логотип Cat Energy"
-          /></a
-        >
+        /></a>
       </div>
       <button class="header__toggle menu-button" type="button"></button>
       <nav class="header__navigation">
@@ -31,7 +30,117 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="section application">
+        <h1 class="section__heading application__heading">Подбор программы</h1>
+        <p class="application__capture">
+          Заполните анкету и мы подберем программу питания для вашего кота
+        </p>
+        <form
+          class="application__form form"
+          action="https://echo.htmlacademy.ru"
+          method="get"
+        >
+          <fieldset>
+            <legend class="form__capture visually-hidden">
+              Основная информация
+            </legend>
+            <p>
+              <label for="name">Имя:*</label>
+              <input type="text" id="name" placeholder="Барсик" />
+            </p>
+            <p>
+              <label for="weight">Вес:*</label>
+              <input type="text" id="weight" placeholder="7" />
+            </p>
+            <p>
+              <label for="age">Возраст:</label>
+              <input type="text" id="age" placeholder="7" />
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend class="form__capture visually-hidden">
+              Контактные данные (владельца кота)
+            </legend>
+            <p>
+              <label for="email">E-mail:*</label>
+              <input type="text" id="email" placeholder="kuklachev@gmail.com" />
+            </p>
+            <p>
+              <label for="email">Телефон:*</label>
+              <input type="text" id="email" placeholder="8 (960) 900-60-90" />
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend class="form__capture">Комментарий</legend>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Расскажите обо всех повадках кота"
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Дополнительно</legend>
+            <p>
+              <input
+                type="checkbox"
+                name="additional__item"
+                value="1"
+                id="additional__item--1"
+              />
+              <label for="additional__item--1">Сахарозаменитель</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="additional__item"
+                value="2"
+                id="additional__item--2"
+              />
+              <label for="additional__item--2">Питьевая вода</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="additional__item"
+                value="3"
+                id="additional__item--3"
+              />
+              <label for="additional__item--3">Молоко</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="additional__item"
+                value="4"
+                id="additional__item--4"
+              />
+              <label for="additional__item--4">Витамины</label>
+            </p>
+            <button class="form__button button" type="submit">
+              Отправить заявку
+            </button>
+            <span class="form__required">* — Обязательные поля</span>
+          </fieldset>
+        </form>
+      </section>
+      <section class="section contacts">
+        <h2 class="section__heading contacts__heading">Контакты</h2>
+        <div class="contacts__card">
+          <p class="contacts__capture">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
+        <img
+          class="contacts__map"
+          src="https://via.placeholder.com/150x150"
+          alt="Магазин Cat Energy на карте"
+        />
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__logo logo">
         <a class="logo__link" href="index.html"
