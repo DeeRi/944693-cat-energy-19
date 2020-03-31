@@ -1,8 +1,17 @@
 .button {
-  display: inline-block;
   @include oswald-normal;
+  display: inline-block;
   background-color: $decoration-color;
   text-transform: uppercase;
   border: none;
-  color: $light;
+  color: $third-text-color;
+  text-align: center;
+  width: 280px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+
+.button--secondary {
+  background-color: $button-disabled;
+  color: $main-text-color;
 }

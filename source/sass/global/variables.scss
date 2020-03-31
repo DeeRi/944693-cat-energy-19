@@ -8,9 +8,16 @@ $sec-font: $oswald;
 //color
 $dark: #111111;
 $grey: #444444;
-$light: #ffffff;
+$light-grey: #ededed;
+$lighter-grey: #f2f2f2;
+$white: #ffffff;
 $green: #68b738;
 
 $main-text-color: $grey;
 $sec-text-color: $dark;
+$third-text-color: $white;
+$main-back-color: $white;
+$sec-back-color: $lighter-grey;
+$border-color: $light-grey;
 $decoration-color: $green;
+$button-disabled: $lighter-grey;

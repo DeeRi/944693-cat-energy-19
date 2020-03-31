@@ -1,16 +1,37 @@
-.programmes__name {
-  @include oswald-normal;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: $sec-text-color;
-}
-
 .programmes__list {
   @include reset-list;
 }
 
+.programmes__name {
+  @include oswald-normal;
+  margin: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $sec-text-color;
+  padding-bottom: 36px;
+}
+
+.programmes__item {
+  background-color: $sec-back-color;
+  padding-top: 39px;
+  padding-bottom: 22px;
+  padding-left: 21px;
+  padding-right: 36px;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .programmes__link {
   @include oswald-normal;
+  text-transform: uppercase;
   font-size: 16px;
   color: $sec-text-color;
+}
+
+.programmes__description {
+  margin: 0;
+  padding-bottom: 23px;
 }

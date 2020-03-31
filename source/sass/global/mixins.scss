@@ -9,3 +9,8 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@mixin main-border {
+  border-width: 1px;
+  border-color: $border-color;
+}

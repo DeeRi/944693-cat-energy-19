@@ -1,0 +1,7 @@
+.catalog {
+  background-color: $main-back-color;
+}
+
+.catalog__list {
+  @include reset-list;
+}
