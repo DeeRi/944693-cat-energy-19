@@ -1,0 +1,16 @@
+.programmes__name {
+  @include oswald-normal;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $sec-text-color;
+}
+
+.programmes__list {
+  @include reset-list;
+}
+
+.programmes__link {
+  @include oswald-normal;
+  font-size: 16px;
+  color: $sec-text-color;
+}

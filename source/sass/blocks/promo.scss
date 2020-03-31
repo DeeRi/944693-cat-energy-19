@@ -1,0 +1,18 @@
+.promo {
+  background-image: url("../../img/index-background-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $light;
+}
+
+.promo__heading {
+  @include oswald-normal;
+  font-size: 36px;
+}
+
+.promo__capture {
+  @include oswald-normal;
+  text-transform: uppercase;
+}
+

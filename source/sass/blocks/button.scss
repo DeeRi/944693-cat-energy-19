@@ -1,0 +1,8 @@
+.button {
+  display: inline-block;
+  @include oswald-normal;
+  background-color: $decoration-color;
+  text-transform: uppercase;
+  border: none;
+  color: $light;
+}

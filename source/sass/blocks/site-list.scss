@@ -1,0 +1,13 @@
+.site-list {
+  @include reset-list;
+}
+
+.site-list__link {
+font-family: $sec-font;
+color: $sec-text-color;
+font-weight: 500;
+font-style: normal;
+text-transform: uppercase;
+line-height: 20px;
+font-size: 20px;
+}
