@@ -1,23 +1,25 @@
 //fonts
-$arial: "Arial", sans-serif;
-$oswald: "Oswald", "Arial", sans-serif;
-
-$main-font: $arial;
-$sec-font: $oswald;
+$main-font: "Arial", sans-serif;
+$sec-font: "Oswald", "Arial", sans-serif;
 
 //color
-$dark: #111111;
-$grey: #444444;
-$light-grey: #ededed;
-$lighter-grey: #f2f2f2;
-$white: #ffffff;
-$green: #68b738;
+$main-text-color: #444444;
+$sec-text-color: #111111;
+$third-text-color: #ffffff;
+$main-back-color: #ffffff;
+$sec-back-color: #f2f2f2;
+$border-color: #ededed;
 
-$main-text-color: $grey;
-$sec-text-color: $dark;
-$third-text-color: $white;
-$main-back-color: $white;
-$sec-back-color: $lighter-grey;
-$border-color: $light-grey;
-$decoration-color: $green;
-$button-disabled: $lighter-grey;
+$menu-hover: rgba(17, 17, 17, 0.6);
+$menu-active: rgba(17, 17, 17, 0.3);
+
+$decoration-color: #68b738;
+$button-action: #5eaa2f;
+
+$button-sec: #f2f2f2;
+$button-sec-hover: #ebebeb;
+$button-sec-active: rgba(68, 68, 68, 0.3);
+
+$program-link-action: rgba(17, 17, 17, 0.3);
+
+$academy-action: rgba(68, 68, 68, 0.3);

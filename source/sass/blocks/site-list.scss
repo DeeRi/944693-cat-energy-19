@@ -11,4 +11,13 @@
   text-transform: uppercase;
   line-height: 20px;
   font-size: 20px;
+
+  &[href]:hover {
+    color: $menu-hover;
+  }
+
+  &[href]:active,
+  &[href]:focus {
+    color: $menu-active;
+  }
 }

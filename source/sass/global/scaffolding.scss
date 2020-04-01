@@ -34,9 +34,3 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.section__heading {
-  @include oswald-normal;
-  font-size: 36px;
-  color: $sec-text-color;
-}
