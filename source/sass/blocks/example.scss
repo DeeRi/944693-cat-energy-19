@@ -1,3 +1,41 @@
 .example {
   background-color: $sec-back-color;
+  padding-top: 35px;
+}
+
+.example__heading {
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.example__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__text {
+  margin: 0;
+}
+
+.example__value {
+  @include oswald-normal;
+  color: $sec-text-color;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example__capture {
+  @include oswald-normal;
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: $sec-text-color;
+  text-align: center;
 }

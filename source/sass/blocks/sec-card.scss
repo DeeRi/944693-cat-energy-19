@@ -1,0 +1,8 @@
+.sec-card__heading {
+  @include oswald-normal;
+  text-transform: uppercase;
+  color: $sec-text-color;
+  line-height: 16px;
+  margin: 0;
+}
+
