@@ -1,0 +1,24 @@
+.promo {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $third-text-color;
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 22px;
+}
+
+.promo__heading {
+  @include oswald-normal;
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  padding-bottom: 19px;
+}
+
+.promo__capture {
+  @include oswald-normal;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 14px;
+}

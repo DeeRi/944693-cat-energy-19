@@ -1,0 +1,37 @@
+.button {
+  @include oswald-normal;
+  display: inline-block;
+  background-color: $decoration-color;
+  text-transform: uppercase;
+  border: none;
+  color: $third-text-color;
+  text-align: center;
+  width: 280px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+
+  &:hover {
+    background-color: $button-action;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $button-action;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--secondary {
+  background-color: $button-sec;
+  color: $main-text-color;
+
+  &:hover {
+    background-color: $button-sec-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $button-sec-hover;
+    color: $button-sec-active;
+  }
+}

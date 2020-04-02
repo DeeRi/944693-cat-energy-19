@@ -1,0 +1,16 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin oswald-normal {
+  font-family: $sec-font;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin main-border {
+  border-width: 1px;
+  border-color: $border-color;
+}
