@@ -1,3 +1,11 @@
+.features {
+  padding-top: 32px;
+}
+
+.features__heading {
+  padding-bottom: 41px;
+}
+
 .features__list {
   @include reset-list;
 }
