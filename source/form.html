@@ -49,21 +49,38 @@
             action="https://echo.htmlacademy.ru"
             method="POST"
           >
-            <fieldset>
+            <fieldset class="form__fieldset">
               <legend class="form__heading visually-hidden">
                 Основная информация
               </legend>
-              <p>
+              <p class="form__row">
                 <label class="form__capture" for="name">Имя:*</label>
-                <input type="text" id="name" placeholder="Барсик" required />
+                <input
+                  class="form__input"
+                  type="text"
+                  id="name"
+                  placeholder="Барсик"
+                  required
+                />
               </p>
-              <p>
-                <label class="form__capture" for="weight">Вес:*</label>
-                <input type="text" id="weight" placeholder="7" required />
+              <p class="form__row">
+                <label class="form__capture" for="weight">Вес (кг):*</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="weight"
+                  placeholder="7"
+                  required
+                />
               </p>
-              <p>
-                <label class="form__capture" for="age">Возраст:</label>
-                <input type="text" id="age" placeholder="7" />
+              <p class="form__row">
+                <label class="form__capture" for="age">Возраст (лет):</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="age"
+                  placeholder="7"
+                />
               </p>
               <p>
                 <input type="radio" id="lose" name="goal" value="1" />
@@ -80,22 +97,24 @@
                 >
               </p>
             </fieldset>
-            <fieldset>
-              <legend class="form__heading visually-hidden">
+            <fieldset class="form__fieldset">
+              <legend class="form__heading">
                 Контактные данные (владельца кота)
               </legend>
-              <p>
+              <p class="form__row">
                 <label class="form__capture" for="email">E-mail:*</label>
                 <input
+                  class="form__input"
                   type="text"
                   id="email"
                   placeholder="kuklachev@gmail.com"
                   required
                 />
               </p>
-              <p>
+              <p class="form__row">
                 <label class="form__capture" for="phone">Телефон:*</label>
                 <input
+                  class="form__input"
                   type="text"
                   id="phone"
                   placeholder="8 (960) 900-60-90"
@@ -103,20 +122,19 @@
                 />
               </p>
             </fieldset>
-            <fieldset>
+            <fieldset class="form__fieldset">
               <legend class="form__heading">Комментарий</legend>
               <label class="form__capture visually-hidden" for="comment"
                 >Ваш комментарий</label
               >
               <textarea
+                class="form__input form__input--textarea"
                 name="comment"
                 id="comment"
-                cols="30"
-                rows="10"
                 placeholder="Расскажите обо всех повадках кота"
               ></textarea>
             </fieldset>
-            <fieldset>
+            <fieldset class="form__fieldset">
               <legend class="form__heading">Дополнительно</legend>
               <p>
                 <input
@@ -172,7 +190,9 @@
       </section>
       <section class="section contacts">
         <div class="container">
-          <h2 class="section__heading contacts__heading">Контакты</h2>
+          <h2 class="section__heading contacts__heading visually-hidden">
+            Контакты
+          </h2>
           <div class="contacts__card">
             <p class="contacts__capture">
               Приглашаем к сотрудничеству дилеров!
@@ -181,11 +201,13 @@
               ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
             </address>
           </div>
-          <img
-            class="contacts__map"
-            src="https://via.placeholder.com/150x150"
-            alt="Магазин Cat Energy на карте"
-          />
+          <div class="contacts__map">
+            <img
+              class="contacts__image"
+              src="https://via.placeholder.com/150x150"
+              alt="Магазин Cat Energy на карте"
+            />
+          </div>
         </div>
       </section>
     </main>

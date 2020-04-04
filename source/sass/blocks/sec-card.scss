@@ -1,0 +1,20 @@
+.sec-card {
+  border-top: 1px solid $border-color;
+  padding-top: 14px;
+}
+
+.sec-card__heading {
+  @include oswald-normal;
+  text-transform: uppercase;
+  color: $sec-card-heading;
+  line-height: 16px;
+  margin: 0;
+}
+
+.sec-card__information {
+  padding-bottom: 14px;
+}
+
+.sec-card__order {
+  margin-bottom: 17px;
+}

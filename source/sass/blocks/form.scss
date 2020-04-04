@@ -1,0 +1,49 @@
+.form__heading {
+  @include oswald-normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $sec-text-color;
+  padding-bottom: 30px;
+}
+
+.form__capture {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $sec-text-color;
+}
+
+.form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.form__input {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $main-text-color;
+  text-transform: uppercase;
+  border: 1px solid $input-border;
+  padding: 15px 16px;
+
+  &--textarea {
+    width: 280px;
+    min-height: 150px;
+  }
+}
+
+.form__required {
+  display: block;
+  text-align: center;
+  padding-top: 23px;
+}

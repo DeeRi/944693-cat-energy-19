@@ -4,6 +4,9 @@
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 23px;
   font-family: $sec-font;
   color: $sec-text-color;
   font-weight: 500;
@@ -11,6 +14,7 @@
   text-transform: uppercase;
   line-height: 20px;
   font-size: 20px;
+  border-top: 1px solid $border-color;
 
   &[href]:hover {
     color: $menu-hover;
