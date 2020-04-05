@@ -13,6 +13,29 @@
   line-height: 20px;
   text-align: center;
   color: $third-text-color;
-  padding-left: 60px;
-  padding-right: 60px;
+  width: 159px;
+}
+
+.gift__icon {
+  height: 61px;
+  width: 56px;
+  display: block;
+  background-image: url("../../img/icon-gift.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    padding-top: 75px;
+    padding-bottom: 69px;
+  }
+
+  .gift__container {
+    display: flex;
+  }
+
+  .gift__capture {
+    width: 159px;
+    text-align: left;
+  }
 }
