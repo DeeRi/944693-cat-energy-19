@@ -17,3 +17,19 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item {
+    width: 25%;
+  }
+}

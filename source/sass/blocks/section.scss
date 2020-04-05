@@ -2,5 +2,13 @@
   @include oswald-normal;
   font-size: 36px;
   color: $sec-text-color;
+  line-height: 60px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .section__heading {
+  font-size: 60px;
+  line-height: 60px;
+}
 }

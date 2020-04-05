@@ -33,3 +33,15 @@
   background-position: center;
   background-size: cover;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__map {
+    background-image: url("../img/bg-map-tablet@1x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+}

@@ -1,3 +1,12 @@
 .social {
   @include reset-list;
+  display: flex;
+}
+
+.social__item {
+  margin-right: 29px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
