@@ -3,8 +3,8 @@
 }
 
 @media (min-width: $tablet-width) {
-.header__container {
-  display: flex;
-  justify-content: space-between;
-}
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
