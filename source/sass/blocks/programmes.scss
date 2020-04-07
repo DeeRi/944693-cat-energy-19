@@ -2,13 +2,18 @@
   @include reset-list;
 }
 
+.programmes__wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
 .programmes__name {
   @include oswald-normal;
   margin: 0;
   font-size: 24px;
   text-transform: uppercase;
   color: $sec-text-color;
-  padding-bottom: 36px;
 }
 
 .programmes__item {
@@ -26,22 +31,87 @@
 
 .programmes__link {
   @include oswald-normal;
+  display: inline-block;
   text-transform: uppercase;
   font-size: 16px;
   color: $sec-text-color;
+  padding-top: 20px;
 
   &:active,
   &:focus {
     color: $program-link-action;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    padding-left: 15px;
+    width: 30px;
+    height: 12px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .programmes__description {
   margin: 0;
   padding-bottom: 23px;
+  border-bottom: 1px solid $border-color;
+}
+
+.programmes__icon {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  background-color: $decoration-color;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+
+  &--slim::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--pro::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .programmes__item {
+    width: 100%;
+    padding-top: 81px;
+    position: relative;
+    padding-left: 52px;
+  }
+
+  .programmes__icon {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 92px;
+    right: 62px;
+  }
+
   .programmes__name {
     font-size: 36px;
     line-height: 37px;
@@ -51,9 +121,11 @@
   .programmes__description {
     @include plain-text-tablet;
     padding-bottom: 62px;
+    width: 371px;
   }
 
   .programmes__link {
+    padding-top: 0;
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 62px;
@@ -63,6 +135,17 @@
 @media (min-width: $desktop-width) {
   .programmes {
     padding-top: 80px;
+  }
+
+  .programmes__wrapper {
+    justify-content: center;
+  }
+
+  .programmes__icon {
+    top: 41px;
+    left: 65px;
+    width: 100px;
+    height: 100px;
   }
 
   .programmes__item {

@@ -14,7 +14,7 @@
   margin: 0;
   font-size: 36px;
   line-height: 36px;
-  padding-bottom: 19px;
+  padding-bottom: 25px;
 }
 
 .promo__capture {
@@ -22,18 +22,20 @@
   margin: 0;
   text-transform: uppercase;
   line-height: 14px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
     position: relative;
     background-image: none;
+    padding-bottom: 529px;
   }
 
   .promo__image {
     position: absolute;
-    left: 50%;
-    top: 25%;
+    left: 5%;
+    top: 40%;
   }
 
   .promo__heading {
@@ -62,6 +64,11 @@
   .promo {
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: right;
-    padding-bottom: 188px;
+    padding-bottom: 200px;
+  }
+
+  .promo__image {
+    top: 10%;
+    left: 30%;
   }
 }
