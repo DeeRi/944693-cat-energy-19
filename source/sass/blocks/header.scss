@@ -21,7 +21,9 @@
     display: flex;
     justify-content: space-between;
   }
+
   .header__navigation {
     display: block;
+    z-index: 10;
   }
 }
