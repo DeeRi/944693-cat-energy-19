@@ -1,5 +1,17 @@
 .menu-button {
   background-color: $main-back-color;
+  border: none;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+
+  &--clicked {
+    background-image: url("../img/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @media (min-width: $tablet-width) {

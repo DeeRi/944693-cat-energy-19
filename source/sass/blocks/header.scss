@@ -2,9 +2,26 @@
   background-color: $main-back-color;
 }
 
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navigation {
+  display: none;
+
+  &--open {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .header__container {
     display: flex;
     justify-content: space-between;
+  }
+  .header__navigation {
+    display: block;
   }
 }
