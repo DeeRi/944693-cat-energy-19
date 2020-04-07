@@ -1,3 +1,9 @@
 .menu-button {
   background-color: $main-back-color;
 }
+
+@media (min-width: $tablet-width) {
+  .menu-button {
+    display: none;
+  }
+}

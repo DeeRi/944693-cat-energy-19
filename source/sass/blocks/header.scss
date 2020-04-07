@@ -1,3 +1,10 @@
 .header {
   background-color: $main-back-color;
 }
+
+@media (min-width: $tablet-width) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

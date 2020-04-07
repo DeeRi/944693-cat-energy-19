@@ -14,3 +14,17 @@
   border-width: 1px;
   border-color: $border-color;
 }
+
+@mixin form-border {
+  border-color: $decoration-color;
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-width: 3px;
+}
+
+@mixin plain-text-tablet {
+  font-size: 16px;
+  line-height: 24px;
+}
