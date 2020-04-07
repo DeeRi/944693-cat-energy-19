@@ -30,7 +30,6 @@
 
 @media (min-width: $tablet-width) {
   .main-card {
-    box-sizing: border-box;
     width: 324px;
     display: flex;
     flex-wrap: wrap;
@@ -38,12 +37,7 @@
     align-items: center;
     background-color: $sec-back-color;
     padding-bottom: 40px;
-    margin-right: 60px;
     margin-bottom: 70px;
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
 
     &--more {
       background-color: $main-back-color;
@@ -65,20 +59,15 @@
   .main-card__capture {
     font-size: 16px;
   }
+
+  .main-card__order {
+    width: 249px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-card {
     width: 245px;
-    margin-right: 80px;
-
-    &:nth-child(2n) {
-      margin-right: 80px;
-    }
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
   }
 
   .main-card__order {
