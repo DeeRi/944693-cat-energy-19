@@ -30,12 +30,14 @@
     position: relative;
     background-image: none;
     padding-bottom: 529px;
+    padding-left: 118px;
+    padding-top: 50px;
   }
 
   .promo__image {
     position: absolute;
-    left: 5%;
-    top: 40%;
+    left: 4%;
+    top: 31%;
   }
 
   .promo__heading {
@@ -44,7 +46,7 @@
     line-height: 60px;
     text-align: left;
     width: 450px;
-    padding-bottom: 33px;
+    padding-bottom: 42px;
   }
 
   .promo__capture {
@@ -57,6 +59,13 @@
 
   .promo__button {
     float: left;
+    font-size: 20px;
+    line-height: 20px;
+    width: 245px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    position: relative;
+    z-index: 10;
   }
 }
 

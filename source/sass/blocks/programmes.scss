@@ -33,6 +33,7 @@
   font-size: 16px;
   color: $sec-text-color;
   padding-top: 19px;
+  position: relative;
 
   &:active,
   &:focus {
@@ -42,10 +43,12 @@
   &::after {
     content: "";
     display: inline-block;
-    padding-left: 15px;
+    position: absolute;
+    top: 5px;
+    right: -50px;
     width: 30px;
     height: 12px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -83,22 +86,32 @@
     content: "";
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -15px;
+    left: -25px;
     background-image: url("../img/icon-cat-pro.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    width: 120%;
-    height: 120%;
+    width: 130%;
+    height: 115%;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .programmes {
+    padding-top: 48px;
+  }
+
+  .programmes__wrapper {
+    padding-bottom: 0;
+  }
+
   .programmes__item {
     width: 100%;
-    padding-top: 81px;
+    padding-top: 78px;
     position: relative;
     padding-left: 52px;
+    padding-bottom: 61px;
+    margin-bottom: 30px;
   }
 
   .programmes__icon {
@@ -106,7 +119,7 @@
     height: 200px;
     position: absolute;
     top: 92px;
-    right: 62px;
+    right: 40px;
   }
 
   .programmes__name {
@@ -117,15 +130,16 @@
 
   .programmes__description {
     @include plain-text-tablet;
-    padding-bottom: 62px;
-    width: 371px;
+    padding-bottom: 55px;
+    width: 340px;
+    border-bottom: none;
   }
 
   .programmes__link {
     padding-top: 0;
     font-size: 20px;
     line-height: 20px;
-    padding-bottom: 62px;
+    padding-bottom: 0;
   }
 }
 

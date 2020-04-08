@@ -22,10 +22,16 @@
   .header__container {
     display: flex;
     justify-content: space-between;
+    padding-top: 22px;
+  }
+
+  .header__menu {
+    padding: 0;
   }
 
   .header__navigation {
     display: block;
     z-index: 10;
   }
+
 }

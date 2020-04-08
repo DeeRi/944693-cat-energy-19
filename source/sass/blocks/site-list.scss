@@ -45,8 +45,11 @@
   }
 
   .site-list__link {
+    font-size: 18px;
+    line-height: 25px;
     font-weight: 400;
     border-bottom: 3px solid $decoration-color;
+    padding-bottom: 4px;
 
     &[href] {
       border: none;
