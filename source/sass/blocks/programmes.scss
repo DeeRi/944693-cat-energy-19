@@ -18,10 +18,7 @@
 
 .programmes__item {
   background-color: $sec-back-color;
-  padding-top: 39px;
-  padding-bottom: 22px;
-  padding-left: 21px;
-  padding-right: 36px;
+  padding: 21px 30px 22px 20px;
   margin-bottom: 20px;
 
   &:last-child {
@@ -35,7 +32,7 @@
   text-transform: uppercase;
   font-size: 16px;
   color: $sec-text-color;
-  padding-top: 20px;
+  padding-top: 19px;
 
   &:active,
   &:focus {
@@ -56,7 +53,7 @@
 
 .programmes__description {
   margin: 0;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
   border-bottom: 1px solid $border-color;
 }
 
@@ -91,8 +88,8 @@
     background-image: url("../img/icon-cat-pro.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
   }
 }
 
