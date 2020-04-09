@@ -44,7 +44,7 @@
     content: "";
     display: inline-block;
     position: absolute;
-    top: 5px;
+    top: 20px;
     right: -50px;
     width: 30px;
     height: 12px;
@@ -86,8 +86,8 @@
     content: "";
     display: block;
     position: absolute;
-    top: -15px;
-    left: -25px;
+    top: 0;
+    left: -10px;
     background-image: url("../img/icon-cat-pro.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -120,6 +120,11 @@
     position: absolute;
     top: 92px;
     right: 40px;
+
+    &--pro::after {
+top: -15px;
+    left: -25px;
+    }
   }
 
   .programmes__name {
@@ -140,6 +145,10 @@
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 0;
+
+    &::after {
+      top: 5px;
+    }
   }
 }
 
