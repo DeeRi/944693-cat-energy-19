@@ -33,5 +33,17 @@
     display: block;
     z-index: 10;
   }
+}
 
+@media (min-width: $desktop-width) {
+
+  .header {
+    padding-top: 55px;
+    padding-left: 76px;
+  }
+
+  .header__container {
+    padding-top: 0;
+    padding-left: 38px;
+  }
 }

@@ -130,7 +130,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    padding-top: 70px;
+  }
+
   .features__item {
+    margin-right: 25px;
     width: 25%;
   }
 }
