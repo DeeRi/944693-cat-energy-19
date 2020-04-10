@@ -1,11 +1,11 @@
 .example {
   background-color: $sec-back-color;
-  padding-top: 35px;
+  padding-top: 16px;
 }
 
 .example__heading {
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
 }
 
 .example__wrapper {
@@ -38,4 +38,14 @@
   line-height: 20px;
   color: $sec-text-color;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    padding-top: 0;
+  }
 }

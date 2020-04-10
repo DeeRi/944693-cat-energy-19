@@ -4,7 +4,7 @@
 }
 
 .features__heading {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .features__list {
@@ -12,6 +12,7 @@
 }
 
 .features__item {
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
 
@@ -22,6 +23,7 @@
 
 .features__text {
   width: 200px;
+  margin: 0;
 }
 
 .features__icon {
@@ -132,6 +134,7 @@
 @media (min-width: $desktop-width) {
   .features {
     padding-top: 70px;
+    padding-bottom: 133px;
   }
   .features__list {
     justify-content: space-between;
@@ -139,5 +142,6 @@
 
   .features__item {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
