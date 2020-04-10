@@ -86,7 +86,7 @@
       position: absolute;
       left: 50%; /* Слева половина от экрана а справа твердый нуль чтобы прижался к концу экрана и тогда можно не указывать ширину блока, сам будет тянуться. */
       right: 0;
-      top: -125px; /* под вопросом, нужно ли*/
+      top: -125px;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: none;
       background-size: cover;

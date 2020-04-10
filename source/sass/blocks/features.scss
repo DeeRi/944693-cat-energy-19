@@ -133,9 +133,11 @@
   .features {
     padding-top: 70px;
   }
+  .features__list {
+    justify-content: space-between;
+  }
 
   .features__item {
-    margin-right: 25px;
-    width: 25%;
+    margin-right: 0;
   }
 }
