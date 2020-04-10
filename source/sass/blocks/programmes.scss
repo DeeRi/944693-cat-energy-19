@@ -159,19 +159,29 @@
 
   .programmes__wrapper {
     justify-content: center;
+    margin-bottom: 45px;
   }
 
   .programmes__icon {
-    top: 41px;
-    left: 65px;
+    top: 47px;
+    left: 52px;
     width: 100px;
     height: 100px;
+
+    &--pro::after {
+      top: -5px;
+      left: -15px;
+    }
+  }
+
+  .programmes__name--pro {
+    margin-left: 40px;
   }
 
   .programmes__item {
     box-sizing: border-box;
     width: 570px;
-    padding-top: 81px;
+    padding-top: 77px;
     padding-bottom: 61px;
     margin-bottom: 0;
   }
@@ -179,6 +189,11 @@
   .programmes__list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .programmes__description {
+    width: 100%;
+    padding-bottom: 32px;
   }
 
   .programmes__link {

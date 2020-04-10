@@ -58,6 +58,12 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .site-list__item {
+    letter-spacing: 0.7px;
+    margin-right: 38px;
+  }
+
   .site-list__link--white {
     color: $third-text-color;
     border-bottom: 3px solid $third-text-color;

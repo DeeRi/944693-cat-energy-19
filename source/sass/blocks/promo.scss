@@ -76,17 +76,17 @@
   .promo {
     background-image: none;
     background-position: right;
-    padding-top: 100px;
+    padding-top: 103px;
     padding-bottom: 200px;
     position: relative;
 
     &::before {
       content: "";
-      width: 50vw;
       height: 696px;
       position: absolute;
-      top: -125px;
-      right: -73px;
+      left: 50%; /* Слева половина от экрана а справа твердый нуль чтобы прижался к концу экрана и тогда можно не указывать ширину блока, сам будет тянуться. */
+      right: 0;
+      top: -125px; /* под вопросом, нужно ли*/
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: none;
       background-size: cover;
@@ -94,7 +94,7 @@
   }
 
   .promo__container {
-    padding-left: 150px;
+    padding-left: 80px;
   }
 
   .promo__capture {
@@ -103,6 +103,6 @@
 
   .promo__image {
     top: 20px;
-    left: 43vw;
+    left: 38%;
   }
 }
