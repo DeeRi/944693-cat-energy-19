@@ -1,7 +1,7 @@
 .example {
   background-color: $sec-back-color;
   padding-top: 16px;
-  padding-bottom: 38px;
+  padding-bottom: 30px;
 }
 
 .example__heading {
@@ -12,10 +12,19 @@
 .example__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.example__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .example__text {
   margin: 0;
+  padding-bottom: 24px;
+  padding-right: 10px;
 }
 
 .example__value {
@@ -23,12 +32,22 @@
   color: $sec-text-color;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
+  width: 124px;
+  height: 56px;
+  border: 1px solid $border-color;
+  display: block;
+  text-align: center;
+  padding-top: 13px;
 }
 
-.example__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.example__name {
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  width: 54px;
+  text-align: center;
+  margin-top: -9px;
 }
 
 .example__capture {
@@ -39,9 +58,38 @@
   line-height: 20px;
   color: $sec-text-color;
   text-align: center;
+  padding-bottom: 33px;
 }
 
 //tablet style
+@media (min-width: $tablet-width) {
+  .example {
+    padding-top: 40px;
+  }
+
+  .example__text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .example__heading {
+    padding-bottom: 62px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .example__capture {
+    font-size: 20px;
+    line-height: 20px;
+    width: 174px;
+    text-align: right;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .example {
