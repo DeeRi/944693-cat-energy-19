@@ -1,6 +1,14 @@
 .catalog {
   background-color: $main-back-color;
-  padding-top: 15px;
+}
+
+.catalog__heading {
+  padding-top: 13px;
+  padding-bottom: 25px;
+}
+
+.catalog__list {
+  padding-top: 29px;
 }
 
 .catalog__list {

@@ -166,7 +166,7 @@
           <div class="example__slider slider">
             <img
               class="slider__image"
-              src="https://via.placeholder.com/150x150"
+              src="img/before-mobile@1x.png"
               alt="Кот"
             />
             <div class="slider__controller">
@@ -187,18 +187,22 @@
           </div>
         </div>
       </section>
-      <section class="section contacts">
+      <section class="section contacts contacts--white">
         <div class="container">
           <h2 class="section__heading contacts__heading visually-hidden">
             Контакты
           </h2>
-          <div class="contacts__card contacts__card--white">
+          <div class="contacts__card">
             <p class="contacts__capture">
-              Приглашаем к сотрудничеству дилеров!
+              Приглашаем <br />
+              к сотрудничеству дилеров!
             </p>
-            <address class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </address>
+            <div class="contacts__address">
+              <address class="contacts__street">
+                ул. Большая Конюшенная, д. 19/8
+              </address>
+              <span class="contacts__city">Санкт-Петербург</span>
+            </div>
           </div>
         </div>
         <div class="contacts__map" id="map"></div>
@@ -231,9 +235,14 @@
           <a
             class="academy__link"
             href="https://htmlacademy.ru/intensive/adaptive"
-            >HTML Academy<img
-              src="https://via.placeholder.com/150x150"
+          >
+            <span class="academy__text">HTML Academy</span
+            ><img
+              class="academy__image"
+              src="img/htmlacademy.svg"
               alt="Логотип Академии"
+              width="27"
+              height="34"
           /></a>
         </div>
       </div>
