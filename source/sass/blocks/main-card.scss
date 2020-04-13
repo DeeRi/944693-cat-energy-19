@@ -60,9 +60,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: $sec-back-color;
+    background: linear-gradient(to top, $sec-back-color, $sec-back-color 85%, $main-back-color 15%, $main-back-color);
     padding-bottom: 40px;
-    margin-bottom: 57px;
+    margin-bottom: 58px;
     text-align: center;
 
     &--more {
@@ -79,7 +79,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 27px;
+    margin-bottom: 31px;
   }
 
   .main-card__link--text {
@@ -106,7 +106,7 @@
 
   .main-card__table {
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .main-card__row {
