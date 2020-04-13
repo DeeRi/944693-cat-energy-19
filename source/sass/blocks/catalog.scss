@@ -8,11 +8,8 @@
 }
 
 .catalog__list {
-  padding-top: 29px;
-}
-
-.catalog__list {
   @include reset-list;
+  padding-top: 29px;
 }
 
 .catalog__heading--sec {
@@ -25,9 +22,9 @@
 }
 
 @media (min-width: $tablet-width) {
-.catalog {
-  padding-top: 38px;
-}
+  .catalog {
+    padding-top: 38px;
+  }
 
   .catalog__heading {
     padding-bottom: 83px;
