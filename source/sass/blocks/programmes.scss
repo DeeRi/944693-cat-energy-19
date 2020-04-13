@@ -144,6 +144,10 @@
     padding-bottom: 55px;
     width: 340px;
     border-bottom: none;
+
+    &--slim {
+      width: 380px;
+    }
   }
 
   .programmes__link {

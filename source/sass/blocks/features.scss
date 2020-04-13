@@ -26,6 +26,10 @@
   margin: 0;
 }
 
+.features__text br {
+  display: none;
+}
+
 .features__icon {
   display: block;
   width: 60px;
@@ -56,6 +60,10 @@
   .features {
     padding-top: 40px;
     padding-bottom: 110px;
+  }
+
+  .features__text br {
+    display: block;
   }
 
   .features__heading {
@@ -133,8 +141,11 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    padding-top: 70px;
+    padding-top: 73px;
     padding-bottom: 133px;
+  }
+  .features__heading {
+    padding-bottom: 73px;
   }
 
   .features__list {
