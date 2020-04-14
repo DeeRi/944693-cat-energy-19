@@ -1,17 +1,17 @@
 let burger = document.querySelector(".menu-button");
 let siteNav = document.querySelector(".header__navigation");
 
+siteNav.classList.remove("header__navigation--nojs");
+
 burger.addEventListener("click", function () {
   if (burger.classList.contains("menu-button--clicked")) {
     burger.classList.remove("menu-button--clicked");
-    siteNav.classList.remove("header__navigation--open");
+    siteNav.classList.add("header__navigation--closed");
   } else {
     burger.classList.add("menu-button--clicked");
-    siteNav.classList.add("header__navigation--open");
+    siteNav.classList.remove("header__navigation--closed");
   }
 });
-
-
 
 let myMap;
 

@@ -1,9 +1,10 @@
 .application {
+  padding-top: 17px;
   padding-bottom: 34px;
 }
 
 .application__heading {
-  padding-bottom: 35px;
+  padding-bottom: 22px;
 }
 
 .application__capture {
@@ -13,5 +14,6 @@
   color: $sec-text-color;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 39px;
+  padding-right: 10px;
+  padding-bottom: 24px;
 }

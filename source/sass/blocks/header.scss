@@ -10,10 +10,17 @@
   padding-bottom: 13px;
 }
 
-.header__navigation {
-  display: none;
+@media (max-width: $mobile-width-only) {
 
-  &--open {
+  .header__navigation .site-list__item {
+    display: block;
+  }
+
+  .header__navigation--closed .site-list__item {
+    display: none;
+  }
+
+  .header__navigation--nojs .site-list__item {
     display: block;
   }
 }
