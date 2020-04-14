@@ -2,8 +2,14 @@
   background-color: $main-back-color;
 }
 
+.catalog__heading {
+  padding-top: 13px;
+  padding-bottom: 25px;
+}
+
 .catalog__list {
   @include reset-list;
+  padding-top: 4px;
 }
 
 .catalog__heading--sec {
@@ -16,8 +22,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 38px;
+  }
+
   .catalog__heading {
-    padding-bottom: 100px;
+    padding-bottom: 83px;
   }
 
   .catalog__list--main {
@@ -28,6 +38,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 55px;
+  }
 
   .catalog__wrapper {
     display: flex;

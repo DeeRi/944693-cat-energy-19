@@ -1,6 +1,15 @@
 .main-card {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.main-card__link--text {
+  display: block;
+  width: 100px;
+  margin-top: 23px;
 }
 
 .main-card__heading {
@@ -12,15 +21,31 @@
   color: $sec-text-color;
 }
 
+.main-card__table {
+  height: 41px;
+  width: 140px;
+  margin-top: 10px;
+}
+
 .main-card__name,
 .main-card__value {
+  padding: 0;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
 }
 
-.main-card--more {
-  text-align: center;
+.main-card__name {
+  text-align: left;
+}
+
+.main-card__value {
+  text-align: right;
+}
+
+.main-card__order {
+  margin-top: -4px;
+  font-size: 16px;
 }
 
 .main-card__capture {
@@ -32,12 +57,13 @@
   .main-card {
     width: 324px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background-color: $sec-back-color;
+    justify-content: flex-start;
+    background: linear-gradient(to top, $sec-back-color, $sec-back-color 85%, $main-back-color 15%, $main-back-color);
     padding-bottom: 40px;
-    margin-bottom: 70px;
+    margin-bottom: 58px;
+    text-align: center;
 
     &--more {
       background-color: $main-back-color;
@@ -45,9 +71,26 @@
     }
   }
 
+  .main-card--small {
+    padding-top: 35px;
+  }
+
+  .main-card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 31px;
+  }
+
+  .main-card__link--text {
+    width: 130px;
+    margin-top: 33px;
+    margin-bottom: 0;
+  }
+
   .main-card__heading {
     font-size: 20px;
-    padding-bottom: 28px;
+    line-height: 20px;
   }
 
   .main-card__name,
@@ -56,21 +99,46 @@
     line-height: 16px;
   }
 
-  .main-card__capture {
-    font-size: 16px;
-  }
-
+  .main-card__table,
   .main-card__order {
     width: 249px;
+  }
+
+  .main-card__table {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .main-card__row {
+    height: 31px;
+  }
+
+  .main-card__capture {
+    font-size: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-card {
     width: 245px;
+    margin-bottom: 58px;
+  }
+
+  .main-card__table {
+    margin-top: 17px;
+    width: 172px;
+  }
+
+  .main-card__text {
+    margin-bottom: 26px;
+  }
+
+  .main-card__link--text {
+    margin-top: 31px;
   }
 
   .main-card__order {
     width: 169px;
+    margin-top: 2px;
   }
 }
