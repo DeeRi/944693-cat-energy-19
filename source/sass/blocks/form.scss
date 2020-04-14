@@ -12,6 +12,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $sec-text-color;
+  margin-right: 12px;
 }
 
 .form__fieldset {
@@ -25,6 +26,12 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  &--radio {
+    justify-content: flex-start;
+  }
 }
 
 .form__input {
@@ -38,13 +45,41 @@
   flex-grow: 1;
 
   &--textarea {
-    width: 280px;
+    width: 100%;
     min-height: 150px;
   }
+}
+
+.form__wrapper {
+padding-bottom: 20px;
 }
 
 .form__required {
   display: block;
   text-align: center;
   padding-top: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__row--checkbox {
+    justify-content: flex-start;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__wrapper--main {
+    width: 50%;
+  }
 }

@@ -62,10 +62,11 @@
             action="https://echo.htmlacademy.ru"
             method="POST"
           >
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--main">
               <legend class="form__heading visually-hidden">
                 Основная информация
               </legend>
+              <div class="form__wrapper form__wrapper--main">
               <p class="form__row">
                 <label class="form__capture" for="name">Имя:*</label>
                 <input
@@ -95,20 +96,23 @@
                   placeholder="7"
                 />
               </p>
-              <p>
-                <input type="radio" id="lose" name="goal" value="1" />
-                <label class="form__capture" for="lose">Похудение</label>
-              </p>
-              <p>
+              </div>
+              <div class="form__wrapper form__wrapper--main">
+                <p class="form__row form__row--radio">
+                  <input type="radio" id="lose" name="goal" value="1" />
+                  <label class="form__capture" for="gain">Похудение</label>
+                </p>
+              <p class="form__row form__row--radio">
                 <input type="radio" id="gain" name="goal" value="2" />
                 <label class="form__capture" for="gain">Набор массы</label>
               </p>
-              <p>
+              <p class="form__row form__row--radio">
                 <input type="radio" id="advice" name="goal" value="3" />
                 <label class="form__capture" for="advice"
                   >Не знаю (нужен ваш совет)</label
                 >
               </p>
+              </div>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__heading">
@@ -149,7 +153,8 @@
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__heading">Дополнительно</legend>
-              <p>
+              <div class="form__wrapper form__wrapper--checkbox">
+              <p class="form__row form__row--checkbox">
                 <input
                   type="checkbox"
                   name="additional__item"
@@ -160,7 +165,7 @@
                   >Сахарозаменитель</label
                 >
               </p>
-              <p>
+              <p class="form__row form__row--checkbox">
                 <input
                   type="checkbox"
                   name="additional__item"
@@ -171,7 +176,7 @@
                   >Питьевая вода</label
                 >
               </p>
-              <p>
+              <p class="form__row form__row--checkbox">
                 <input
                   type="checkbox"
                   name="additional__item"
@@ -182,7 +187,7 @@
                   >Молоко</label
                 >
               </p>
-              <p>
+              <p class="form__row form__row--checkbox">
                 <input
                   type="checkbox"
                   name="additional__item"
@@ -193,6 +198,7 @@
                   >Витамины</label
                 >
               </p>
+              </div>
               <button class="form__button button" type="submit">
                 Отправить заявку
               </button>

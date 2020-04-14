@@ -15,5 +15,22 @@
   text-transform: uppercase;
   margin: 0;
   padding-right: 10px;
-  padding-bottom: 24px;
+  padding-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .application {
+    padding-top: 49px;
+  }
+
+  .application__heading {
+      padding-bottom: 60px;
+  }
+
+  .application__capture {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 300px;
+    padding-left: 40px;
+  }
 }
