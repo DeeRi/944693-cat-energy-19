@@ -20,3 +20,9 @@
 .slider__image {
   padding-bottom: 27px;
 }
+
+@media (min-width: $tablet-width) {
+  .slider {
+    padding-left: 20px;
+  }
+}

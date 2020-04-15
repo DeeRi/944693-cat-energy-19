@@ -21,7 +21,7 @@
   border: none;
 }
 
-.form__row {
+.form__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +50,8 @@
   }
 }
 
-.form__wrapper {
+.form__list {
+@include reset-list;
 padding-bottom: 20px;
 }
 
@@ -61,12 +62,12 @@ padding-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .form__wrapper--checkbox {
+  .form__list--checkbox {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .form__row--checkbox {
+  .form__item--checkbox {
     justify-content: flex-start;
     width: 50%;
   }
@@ -79,7 +80,7 @@ padding-bottom: 20px;
     flex-wrap: wrap;
   }
 
-  .form__wrapper--main {
+  .form__list--main {
     width: 50%;
   }
 }

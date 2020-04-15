@@ -30,6 +30,10 @@
     padding-bottom: 83px;
   }
 
+  .catalog__heading--sec {
+    position: relative;
+  }
+
   .catalog__list--main {
     display: flex;
     flex-wrap: wrap;
@@ -44,5 +48,11 @@
 
   .catalog__wrapper {
     display: flex;
+  }
+
+  .catalog__list--secondary {
+    width: 70%;
+    margin-right: 80px;
+    padding-bottom: 86px;
   }
 }
