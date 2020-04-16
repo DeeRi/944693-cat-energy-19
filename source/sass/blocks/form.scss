@@ -90,14 +90,30 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form__list--checkbox {
-    display: flex;
-    flex-wrap: wrap;
+  .form {
+    padding-left: 43px;
   }
 
-  .form__item--checkbox {
-    justify-content: flex-start;
-    width: 50%;
+  .form__heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__fieldset--main {
+    padding-right: 40px;
+  }
+
+  .form__list--cat {
+    padding-bottom: 52px;
+  }
+
+  .form__row {
+    margin-bottom: 24px;
+  }
+
+  .form__capture {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

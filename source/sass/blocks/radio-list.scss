@@ -31,3 +31,23 @@
   background-color: $decoration-color;
   background-clip: content-box;
 }
+
+
+@media (min-width: $tablet-width) {
+    .radio-list {
+      width: 100%;
+      padding-left: 48px;
+      padding-top: 33px;
+      border: 1px solid $border-color;
+  }
+
+  .radio-list__item {
+    margin-bottom: 30px;
+  }
+
+  .radio-list__title::before {
+    width: 40px;
+    height: 40px;
+    left: -23px;
+  }
+}
