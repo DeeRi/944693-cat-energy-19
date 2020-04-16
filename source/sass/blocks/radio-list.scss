@@ -1,5 +1,10 @@
+.radio-list {
+  margin-top: 25px;
+  padding-left: 6px;
+}
+
 .radio-list__item {
-  margin-bottom: 40px;
+  margin-bottom: 22px;
 }
 
 .radio-list__title {
@@ -8,13 +13,15 @@
 
   &::before {
     content: "";
+    box-sizing: border-box;
     top: 0;
     border-radius: 50%;
-    left: -10px;
-    width: 20px;
-    height: 20px;
+    left: -6px;
+    top: -4px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    padding: 11px;
+    padding: 9px;
     background-color: $main-back-color;
     border: 1px solid $border-color;
   }
