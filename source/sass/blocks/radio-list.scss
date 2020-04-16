@@ -1,0 +1,26 @@
+.radio-list__item {
+  margin-bottom: 40px;
+}
+
+.radio-list__title {
+  position: relative;
+  padding-left: 40px;
+
+  &::before {
+    content: "";
+    top: 0;
+    border-radius: 50%;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding: 11px;
+    background-color: $main-back-color;
+    border: 1px solid $border-color;
+  }
+}
+
+.radio-list__btn:checked + .radio-list__title::before {
+  background-color: $decoration-color;
+  background-clip: content-box;
+}
