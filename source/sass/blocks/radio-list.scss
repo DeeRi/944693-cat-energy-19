@@ -1,6 +1,7 @@
 .radio-list {
   margin-top: 25px;
   padding-left: 6px;
+  padding-bottom: 32px;
 }
 
 .radio-list__item {
@@ -14,7 +15,6 @@
   &::before {
     content: "";
     box-sizing: border-box;
-    top: 0;
     border-radius: 50%;
     left: -6px;
     top: -4px;

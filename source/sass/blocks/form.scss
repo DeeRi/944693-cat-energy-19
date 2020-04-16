@@ -1,9 +1,28 @@
+.form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  &--comment {
+    margin-bottom: 25px;
+  }
+}
+
 .form__heading {
   @include oswald-normal;
   font-size: 24px;
   line-height: 24px;
   color: $sec-text-color;
   padding-bottom: 30px;
+
+  &--owner {
+    padding-bottom: 33px;
+  }
+  &--comment {
+    padding-bottom: 35px;
+  }
+  &--checkbox {
+    padding-bottom: 40px;
+  }
 }
 
 .form__row {
@@ -22,12 +41,6 @@
   text-transform: uppercase;
   color: $sec-text-color;
   margin-right: 12px;
-}
-
-.form__fieldset {
-  padding: 0;
-  margin: 0;
-  border: none;
 }
 
 .form__item {
@@ -52,18 +65,28 @@
   &--textarea {
     width: 100%;
     min-height: 150px;
+    padding-right: 0;
   }
 }
 
 .form__list {
   @include reset-list;
   padding-bottom: 23px;
+  &--owner {
+    padding-bottom: 27px;
+  }
 }
 
 .form__required {
   display: block;
   text-align: center;
-  padding-top: 23px;
+  margin-top: 18px;
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 15px;
 }
 
 @media (min-width: $tablet-width) {
