@@ -85,3 +85,16 @@
     border-left: 2px solid $decoration-color;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .checkbox-list {
+    padding-left: 0;
+    text-align: right;
+    justify-content: space-between;
+  }
+
+  .checkbox-list__item {
+    padding-left: 0;
+    width: 20%;
+  }
+}

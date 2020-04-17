@@ -52,3 +52,18 @@
     left: -23px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .radio-list {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    min-height: 196px;
+    padding-left: 43px;
+    padding-top: 30px;
+  }
+    .radio-list__title::before {
+      left: -18px;
+  }
+}

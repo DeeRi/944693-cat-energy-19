@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   border: none;
+
   &--comment {
     margin-bottom: 25px;
   }
@@ -72,6 +73,7 @@
 .form__list {
   @include reset-list;
   padding-bottom: 23px;
+
   &--owner {
     padding-bottom: 27px;
   }
@@ -97,8 +99,14 @@
   .form__heading {
     font-size: 36px;
     line-height: 36px;
+    &--comment {
+      padding-bottom: 70px;
+    }
+    &--checkbox {
+      padding-bottom: 65px;
+    }
     &--owner {
-      padding-bottom: 78px;
+      padding-bottom: 79px;
     }
   }
 
@@ -107,40 +115,25 @@
     &--main {
       margin-bottom: 78px;
     }
+    &--owner {
+      margin-bottom: 43px;
+    }
+    &--comment {
+      margin-bottom: 65px;
+    }
   }
 
   .form__input {
     padding: 13px 24px;
+    &--textarea {
+      font-size: 20px;
+      line-height: 30px;
+      min-height: 174px;
+    }
   }
 
   .form__list--cat {
     padding-bottom: 52px;
-  }
-
-  .form__list--owner {
-    padding-bottom: 0;
-  }
-
-  .form__fieldset--owner {
-    margin-bottom: 73px;
-  }
-
-  .form__heading--comment {
-    padding-bottom: 70px;
-  }
-
-  .form__heading--checkbox {
-    padding-bottom: 65px;
-  }
-
-  .form__input--textarea {
-    font-size: 20px;
-    line-height: 30px;
-    min-height: 174px;
-  }
-
-  .form__fieldset--comment {
-    margin-bottom: 65px;
   }
 
   .form__row {
@@ -177,13 +170,71 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form__fieldset--main {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  .form {
+    padding-left: 0;
   }
 
-  .form__list--main {
+  .form__fieldset {
+    padding-right: 0;
+    &--main {
+      margin: 0;
+      margin-bottom: 65px;
+    }
+    &--comment {
+      margin-bottom: 69px;
+    }
+  }
+
+  .form__heading {
+    &--owner {
+      padding-bottom: 78px;
+    }
+  }
+
+  .form__row {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .form__list--cat {
+    width: 47%;
+    padding-bottom: 0;
+    margin-right: 80px;
+  }
+
+  .form__wrapper--main {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .form__list {
+    &--owner {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    &--radio {
+      width: 50%;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    &--main {
+      width: 50%;
+    }
+
+    &--cat {
+      width: 47%;
+      padding-bottom: 0;
+      margin-right: 80px;
+    }
+  }
+
+  .form__list--owner .form__row {
     width: 50%;
+    margin: 0;
+    margin-right: 78px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

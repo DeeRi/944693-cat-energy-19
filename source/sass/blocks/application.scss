@@ -25,7 +25,7 @@
   }
 
   .application__heading {
-      padding-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   .application__capture {
@@ -34,5 +34,20 @@
     padding-right: 300px;
     padding-left: 40px;
     padding-bottom: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application {
+    padding-top: 70px;
+  }
+
+  .application__heading {
+    padding-bottom: 55px;
+  }
+
+  .application__capture {
+    padding-left: 0;
+    padding-right: 850px;
   }
 }
