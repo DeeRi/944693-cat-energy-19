@@ -97,23 +97,82 @@
   .form__heading {
     font-size: 36px;
     line-height: 36px;
+    &--owner {
+      padding-bottom: 78px;
+    }
   }
 
-  .form__fieldset--main {
+  .form__fieldset {
     padding-right: 40px;
+    &--main {
+      margin-bottom: 78px;
+    }
+  }
+
+  .form__input {
+    padding: 13px 24px;
   }
 
   .form__list--cat {
     padding-bottom: 52px;
   }
 
+  .form__list--owner {
+    padding-bottom: 0;
+  }
+
+  .form__fieldset--owner {
+    margin-bottom: 73px;
+  }
+
+  .form__heading--comment {
+    padding-bottom: 70px;
+  }
+
+  .form__heading--checkbox {
+    padding-bottom: 65px;
+  }
+
+  .form__input--textarea {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 174px;
+  }
+
+  .form__fieldset--comment {
+    margin-bottom: 65px;
+  }
+
   .form__row {
     margin-bottom: 24px;
+  }
+
+  .form__fieldset--checkbox {
+    margin-bottom: 65px;
   }
 
   .form__capture {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .form__button {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 62px;
+    margin-top: 0;
+  }
+
+  .form__required {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 0;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 

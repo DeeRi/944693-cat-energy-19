@@ -46,4 +46,42 @@
   content: "";
 }
 
+@media (min-width: $tablet-width) {
+  .checkbox-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 55px;
+  }
 
+  .checkbox-list__item {
+    padding-left: 60px;
+    width: 50%;
+    margin-bottom: 50px;
+
+    &:nth-child(3),
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:first-child,
+    &:nth-child(3) {
+      padding-left: 0;
+    }
+  }
+
+  .checkbox-list__title::before {
+    width: 40px;
+    height: 40px;
+    left: -57px;
+    top: -5px;
+  }
+
+  .checkbox-list__title::after {
+    width: 20px;
+    height: 10px;
+    left: -47px;
+    top: 6px;
+    border-bottom: 2px solid $decoration-color;
+    border-left: 2px solid $decoration-color;
+  }
+}
