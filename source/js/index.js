@@ -15,17 +15,28 @@ burger.addEventListener("click", function () {
 
 let myMap;
 
-ymaps.ready(init);
-
-function init() {
-  myMap = new ymaps.Map(
-    "map",
-    {
-      center: [59.938631, 30.323055],
-      zoom: 15,
-    },
-    {
-      searchControlProvider: "yandex#search",
-    }
-  );
-}
+ymaps.ready(function () {
+  var myMap = new ymaps.Map(
+      "map",
+      {
+        center: [59.940262328564486, 30.323117499999945],
+        zoom: 15,
+      },
+      {
+        searchControlProvider: "yandex#search",
+      }
+    ),
+    myPlacemark = new ymaps.Placemark(
+      myMap.getCenter(),
+      {
+        hintContent: "Cat Energy",
+      },
+      {
+        iconLayout: "default#image",
+        iconImageHref: "../img/map-pin.png",
+        iconImageSize: [120, 110],
+        iconImageOffset: [-5, -38],
+      }
+    );
+  myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
+});

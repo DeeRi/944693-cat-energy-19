@@ -6,6 +6,11 @@
 
 .radio-list__item {
   margin-bottom: 22px;
+  transition: all 0.3s ease;
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .radio-list__title {
@@ -23,7 +28,10 @@
     position: absolute;
     padding: 9px;
     background-color: $main-back-color;
-    border: 1px solid $border-color;
+    border: 1px solid $input-border;
+  }
+  &:hover::before  {
+    border-color: $input-hover;
   }
 }
 
