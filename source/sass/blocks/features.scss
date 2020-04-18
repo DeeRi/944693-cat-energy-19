@@ -4,7 +4,7 @@
 }
 
 .features__heading {
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 
 .features__list {
@@ -12,17 +12,44 @@
 }
 
 .features__item {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   display: flex;
   align-items: center;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $decoration-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--two::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--three::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--four::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
 .features__text {
-  width: 200px;
+  padding-left: 80px;
   margin: 0;
 }
 
@@ -30,29 +57,27 @@
   display: none;
 }
 
-.features__icon {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-color: $decoration-color;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 20px;
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .features__item {
+    &::before {
+      background-size: 50px 50px;
+    }
 
-  &--leaf {
-    background-image: url("../img/advantage-leaf@1x.png");
-  }
+    &--one::before {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
 
-  &--powder {
-    background-image: url("../img/advantage-powder@1x.png");
-  }
+    &--two::before {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
 
-  &--knife {
-    background-image: url("../img/advantage-dining@1x.png");
-  }
+    &--three::before {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
 
-  &--alarm {
-    background-image: url("../img/advantage-clock@1x.png");
+    &--four::before {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
   }
 }
 
@@ -76,8 +101,6 @@
   }
 
   .features__item {
-    flex-direction: column;
-    align-items: flex-start;
     position: relative;
     margin-bottom: 133px;
     margin-right: 130px;
@@ -108,34 +131,36 @@
       left: 120px;
       top: 90px;
     }
-  }
 
-  .features__item--one::after {
-    content: "1";
-  }
+    &--one::after {
+      content: "1";
+    }
 
-  .features__item--two::after {
-    content: "2";
-  }
+    &--two::after {
+      content: "2";
+    }
 
-  .features__item--three::after {
-    content: "3";
-  }
+    &--three::after {
+      content: "3";
+    }
 
-  .features__item--four::after {
-    content: "4";
+    &--four::after {
+      content: "4";
+    }
   }
 
   .features__text {
     z-index: 2;
-    width: 250px;
+    width: 255px;
+    padding-top: 110px;
+    padding-left: 0;
   }
 
-  .features__icon {
+  .features__item::before {
     width: 80px;
     height: 80px;
     margin-right: 0;
-    margin-bottom: 30px;
+    top: 0;
   }
 }
 
@@ -156,5 +181,14 @@
   .features__item {
     margin-right: 0;
     margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--three::before,
+    &--four::before {
+      left: 6px;
+    }
   }
 }
