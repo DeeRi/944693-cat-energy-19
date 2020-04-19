@@ -19,9 +19,11 @@
 
 .social__icon {
   fill: $social-icon;
+
   &:hover {
     fill: $decoration-color;
   }
+
   &:active,
   &focus {
     fill: $decoration-color;
@@ -46,10 +48,12 @@
       height: 23px;
       width: 23px;
     }
+
     &--vk {
       height: 16px;
       width: 30px;
     }
+
     &--fb {
       height: 28px;
       width: 14px;

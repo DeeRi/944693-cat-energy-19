@@ -81,15 +81,6 @@
   }
 }
 
-.features__text {
-  padding-left: 80px;
-  margin: 0;
-}
-
-.features__text br {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .features {
     padding-top: 40px;
@@ -150,6 +141,7 @@
     &--four::after {
       content: "4";
     }
+
     &::before {
       width: 80px;
       height: 80px;
@@ -190,6 +182,7 @@
     &:last-child {
       margin-right: 0;
     }
+
     &--three::before,
     &--four::before {
       left: 6px;

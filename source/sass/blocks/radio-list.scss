@@ -7,6 +7,7 @@
 .radio-list__item {
   margin-bottom: 22px;
   transition: all 0.3s ease;
+
   &:active,
   &:focus {
     opacity: 0.3;
@@ -30,7 +31,8 @@
     background-color: $main-back-color;
     border: 1px solid $input-border;
   }
-  &:hover::before  {
+
+  &:hover::before {
     border-color: $input-hover;
   }
 }
@@ -40,14 +42,13 @@
   background-clip: content-box;
 }
 
-
 @media (min-width: $tablet-width) {
-    .radio-list {
-      width: 100%;
-      padding-left: 48px;
-      padding-top: 33px;
-      border: 1px solid $border-color;
-      padding-bottom: 0;
+  .radio-list {
+    width: 100%;
+    padding-left: 48px;
+    padding-top: 33px;
+    border: 1px solid $border-color;
+    padding-bottom: 0;
   }
 
   .radio-list__item {
@@ -71,7 +72,8 @@
     padding-left: 43px;
     padding-top: 30px;
   }
-    .radio-list__title::before {
-      left: -18px;
+
+  .radio-list__title::before {
+    left: -18px;
   }
 }

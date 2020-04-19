@@ -6,6 +6,7 @@
   color: $main-text-color;
   font-size: 16px;
   line-height: 16px;
+
   &:active,
   &:focus {
     opacity: 0.3;
@@ -15,6 +16,7 @@
 .academy__icon {
   margin-right: -8px;
   fill: $social-icon;
+
   &:hover,
   &:active,
   &:focus {
