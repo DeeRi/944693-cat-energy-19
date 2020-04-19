@@ -63,11 +63,23 @@
   padding: 13px 14px;
   flex-grow: 1;
   outline: none;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 
   &--textarea {
     width: 100%;
     min-height: 150px;
     padding-right: 0;
+  }
+
+  &--mail {
+    background-image: url("../img/icon-mail.svg");
+    background-size: 18px 14px;
+  }
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+    background-size: 21px 21px;
   }
 
   &:hover {
