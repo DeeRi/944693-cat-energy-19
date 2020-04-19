@@ -32,6 +32,13 @@
 @media (min-width: $tablet-width) {
   .social {
     align-items: center;
+    width: auto;
+    padding-left: 19px;
+    padding-top: 20px;
+  }
+
+  .social__item {
+    margin-right: 29px;
   }
 
   .social__icon {

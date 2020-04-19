@@ -31,13 +31,26 @@
   }
 
   .catalog__heading--sec {
-    position: relative;
+    padding-bottom: 76px;
+    padding-top: 10px;
+    padding-left: 35px;
+    font-size: 36px;
+    line-height: 36px;
+    z-index: 10;
   }
 
   .catalog__list--main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .catalog__list--secondary {
+    margin-bottom: 63px;
+  }
+
+  .catalog__wrapper {
+    padding-bottom: 76px;
   }
 }
 
@@ -48,11 +61,18 @@
 
   .catalog__wrapper {
     display: flex;
+    padding-bottom: 80px;
   }
 
   .catalog__list--secondary {
-    width: 70%;
+    width: 74%;
     margin-right: 80px;
-    padding-bottom: 86px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .catalog__heading--sec {
+    padding-top: 16px;
+    padding-left: 0;
   }
 }

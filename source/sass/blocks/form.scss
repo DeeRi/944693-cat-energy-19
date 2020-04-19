@@ -205,11 +205,17 @@
     &--comment {
       margin-bottom: 69px;
     }
+    &--checkbox {
+      margin-bottom: 20px;
+    }
   }
 
   .form__heading {
     &--owner {
       padding-bottom: 78px;
+    }
+    &--checkbox {
+      padding-bottom: 68px;
     }
   }
 
@@ -258,5 +264,9 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .form__button {
+    width: 568px;
   }
 }

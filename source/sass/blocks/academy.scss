@@ -13,6 +13,7 @@
 }
 
 .academy__icon {
+  margin-right: -8px;
   fill: $social-icon;
   &:hover,
   &:active,
@@ -30,5 +31,9 @@
 @media (min-width: $tablet-width) {
   .academy__link {
     width: 162px;
+  }
+
+  .academy__icon {
+    margin-right: -9px;
   }
 }

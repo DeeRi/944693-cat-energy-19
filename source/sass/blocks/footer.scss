@@ -22,7 +22,7 @@
 }
 
 .footer__academy {
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,6 +32,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 37px;
+  }
+
+  .footer__social {
+    padding-top: 18px;
   }
 
   .footer__academy,
