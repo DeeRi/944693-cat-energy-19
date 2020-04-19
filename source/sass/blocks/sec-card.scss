@@ -1,6 +1,6 @@
 .sec-card {
   border-top: 1px solid $border-color;
-  padding-top: 14px;
+  padding-top: 12px;
 }
 
 .sec-card__heading {
@@ -8,12 +8,13 @@
   text-transform: uppercase;
   color: $sec-card-heading;
   line-height: 16px;
+  padding-bottom: 7px;
   margin: 0;
 }
 
 .sec-card__information {
   width: 100%;
-  padding-bottom: 14px;
+  padding-bottom: 9px;
 }
 
 .sec-card__row {

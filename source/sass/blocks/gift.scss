@@ -1,16 +1,27 @@
 .gift {
-  padding-top: 65px;
+  position: relative;
+  padding-top: 225px;
   padding-bottom: 45px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 35px;
-
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    height: 61px;
+    width: 56px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .gift__capture {
@@ -19,16 +30,6 @@
   line-height: 20px;
   text-align: center;
   color: $third-text-color;
-  width: 159px;
-}
-
-.gift__icon {
-  display: block;
-  height: 61px;
-  width: 56px;
-  background-image: url("../img/icon-gift.svg");
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
