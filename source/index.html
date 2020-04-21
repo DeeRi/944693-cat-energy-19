@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div style="display: none">
+<include src="build/img/sprite.svg"></include>
+    </div>
     <header class="header">
       <div class="header__container container">
         <div class="header__menu">
           <a class="logo__link">
             <picture>
-              <source
-                srcset="img/logo-desktop.svg"
-                media="(min-width: 1300px)"
-              />
-              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)" />
-              <img
-                srcset="img/logo-mobile.svg"
-                alt="Logo"
-                width="191"
-                height="39"
-              />
+              <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+              <img srcset="img/logo-mobile.svg" alt="Logo" width="191" height="39">
             </picture>
           </a>
           <button class="header__toggle menu-button" type="button"></button>
@@ -33,16 +28,10 @@
               <a class="site-list__link site-list__link--white">Главная</a>
             </li>
             <li class="site-list__item">
-              <a
-                class="site-list__link site-list__link--white"
-                href="catalog.html"
-                >Каталог продукции</a
-              >
+              <a class="site-list__link site-list__link--white" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--white" href="form.html"
-                >Подбор программы</a
-              >
+              <a class="site-list__link site-list__link--white" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -52,29 +41,16 @@
       <section class="section promo">
         <div class="promo__container container">
           <h1 class="promo__heading">
-            Функциональное <br />
+            Функциональное <br>
             питание для котов
           </h1>
           <p class="promo__capture">Занялся собой? Займись котом!</p>
           <picture>
-            <source
-              srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x"
-              media="(min-width: 1300px)"
-            />
-            <source
-              srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x"
-              media="(min-width: 768px)"
-            />
-            <img
-              class="promo__image"
-              src="img/index-can-mobile@1x.png"
-              srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x"
-              alt="Продукт Cat Energy"
-            />
+            <source srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x" media="(min-width: 1300px)">
+            <source srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" alt="Продукт Cat Energy">
           </picture>
-          <a class="promo__button button" href="form.html"
-            >Подобрать программу</a
-          >
+          <a class="promo__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="section programmes">
@@ -134,7 +110,7 @@
             <li class="features__item features__item--four">
               <p class="features__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему
-                <br />
+                <br>
                 вашего питомца!
               </p>
             </li>
@@ -161,39 +137,20 @@
                 <span class="example__name">затрачено времени</span>
               </div>
             </div>
-            <span class="example__capture"
-              >Затраты на питание: 15 000 руб.</span
-            >
+            <span class="example__capture">Затраты на питание: 15 000 руб.</span>
           </div>
           <div class="example__slider slider">
             <picture>
-              <source
-                srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x"
-                media="(min-width: 1300px)"
-              />
-              <source
-                srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x"
-                media="(min-width: 768px)"
-              />
-              <img
-                class="slider__image"
-                src="img/before-mobile@1x.png"
-                srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x"
-                alt="Кот"
-              />
+              <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
+              <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+              <img class="slider__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" alt="Кот">
             </picture>
             <div class="slider__controller">
-              <button
-                class="slider__button slider__button--before"
-                type="button"
-              >
+              <button class="slider__button slider__button--before" type="button">
                 Было
               </button>
-              <input class="slider__range" type="range" min="1" max="10" />
-              <button
-                class="slider__button slider__button--after"
-                type="button"
-              >
+              <input class="slider__range" type="range" min="1" max="10">
+              <button class="slider__button slider__button--after" type="button">
                 Стало
               </button>
             </div>
@@ -207,7 +164,7 @@
           </h2>
           <div class="contacts__card">
             <p class="contacts__capture">
-              Приглашаем <br />
+              Приглашаем <br>
               к сотрудничеству дилеров!
             </p>
             <div class="contacts__address">
@@ -224,14 +181,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__logo logo">
-          <a class="logo__link"
-            ><img
-              class="logo__image"
-              src="img/logo-footer.svg"
-              alt="Логотип Cat Energy"
-              width="128"
-              height="24"
-          /></a>
+          <a class="logo__link"><img class="logo__image" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24"></a>
         </div>
         <ul class="footer__social social">
           <li class="social__item">
@@ -245,18 +195,8 @@
           </li>
         </ul>
         <div class="footer__academy academy">
-          <a
-            class="academy__link"
-            href="https://htmlacademy.ru/intensive/adaptive"
-          >
-            <span class="academy__text">HTML Academy</span
-            ><img
-              class="academy__image"
-              src="img/htmlacademy.svg"
-              alt="Логотип Академии"
-              width="27"
-              height="34"
-          /></a>
+          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="academy__text">HTML Academy</span><img class="academy__image" src="img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"></a>
         </div>
       </div>
     </footer>
