@@ -19,6 +19,18 @@
   color: $sec-text-color;
   margin: 0;
   padding: 30px 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, transparent 84%, $decoration-color 84%, $decoration-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {

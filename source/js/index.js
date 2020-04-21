@@ -33,7 +33,7 @@ ymaps.ready(function () {
       },
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/map-pin.png",
+        iconImageHref: "img/map-pin.png",
         iconImageSize: [120, 110],
         iconImageOffset: [-5, -38],
       }
