@@ -19,13 +19,13 @@
 
 .catalog__heading--sec {
   @include oswald-normal;
+  position: relative;
   font-size: 24px;
   line-height: 24px;
   color: $sec-text-color;
   padding: 0;
   margin-top: 30px;
   margin-bottom: 30px;
-  position: relative;
   background: linear-gradient(to bottom, transparent, transparent 54%, $decoration-color 54%, $decoration-color 57%, transparent 57%, transparent);
 }
 
@@ -45,15 +45,8 @@
   }
 
   .catalog__heading--sec {
-    padding-bottom: 76px;
-    padding-top: 10px;
-    padding-left: 35px;
     font-size: 36px;
     line-height: 36px;
-    z-index: 10;
-  }
-
-  .catalog__heading--sec {
     margin: 0;
     padding: 0;
     margin-bottom: 63px;
@@ -94,8 +87,6 @@
   }
 
   .catalog__heading--sec {
-    padding-top: 16px;
-    padding-left: 0;
     background: linear-gradient(to bottom, transparent, transparent 55%, $decoration-color 55%, $decoration-color 58%, transparent 58%, transparent);
     padding: 0 calc((100vw - 1220px)/ 2);
   }
