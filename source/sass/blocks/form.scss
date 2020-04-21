@@ -4,6 +4,7 @@
   border: none;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
 
   &--comment {
     margin-bottom: 25px;
@@ -22,6 +23,7 @@
   color: $sec-text-color;
   padding-bottom: 30px;
   position: relative;
+  width: 100%;
 
   &--owner {
     padding-top: 32px;
@@ -36,6 +38,21 @@
 
   &--checkbox {
     padding-bottom: 40px;
+  }
+}
+
+.legend {
+  position: relative;
+  padding-left: 50px;
+  width: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right,transparent, transparent 80%, $decoration-color 80%, $decoration-color);
+    height: 3px;
+    width: 100%;
+    top: 50%;
+    right: 0;
   }
 }
 
