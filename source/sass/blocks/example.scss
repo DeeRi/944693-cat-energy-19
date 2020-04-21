@@ -119,23 +119,39 @@
 @media (min-width: $desktop-width) {
   .example {
     padding-top: 0;
-    background-color: $sec-back-color;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom, $main-back-color, $main-back-color 20%, $sec-back-color 20%, $sec-back-color);
+  }
+
+  .example__heading {
+    padding-bottom: 140px;
   }
 
   .example__container {
     display: flex;
   }
 
-  .example__text-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .example__capture {
-    width: 100%;
+  .example__wrapper {
+    padding-bottom: 50px;
   }
 
   .example__wrapper--main {
-    width: 40%;
+    width: 445px;
+  }
+
+  .example__text {
+    padding-bottom: 68px;
+  }
+
+  .example__text-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .example__capture {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+    width: 445px;
   }
 }

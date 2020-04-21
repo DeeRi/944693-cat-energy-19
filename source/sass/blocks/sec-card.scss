@@ -46,11 +46,12 @@
   .sec-card__heading {
     font-size: 20px;
     line-height: 20px;
+    min-width: 325px;
   }
 
   .sec-card__information {
     padding-bottom: 0;
-    width: 50%;
+    width: 284px;
   }
 
   .sec-card__order {
@@ -61,7 +62,7 @@
 
   .sec-card__row {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   .sec-card__value {

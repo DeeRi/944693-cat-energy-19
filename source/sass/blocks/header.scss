@@ -1,5 +1,11 @@
 .header {
   background-color: $main-back-color;
+  position: relative;
+  border-bottom: 1px solid $border-color;
+}
+
+.header__container {
+  min-width: 320px;
 }
 
 .header__menu {
@@ -8,6 +14,8 @@
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -25,6 +33,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header {
+    border-bottom: none;
+  }
+
   .header__container {
     display: flex;
     justify-content: space-between;

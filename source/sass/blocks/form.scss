@@ -2,9 +2,16 @@
   padding: 0;
   margin: 0;
   border: none;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &--comment {
     margin-bottom: 25px;
+  }
+
+  &--main {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -17,9 +24,10 @@
   position: relative;
 
   &--owner {
-    background-color: $main-back-color;
+    padding-top: 32px;
     padding-bottom: 33px;
     position: relative;
+    background-color: $main-back-color;
   }
 
   &--comment {
@@ -96,6 +104,11 @@
   &:active {
     border: 2px solid $input-active;
   }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .form__list {
@@ -104,6 +117,12 @@
 
   &--owner {
     padding-bottom: 27px;
+  }
+
+  &--cat {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid $border-color;
   }
 }
 
@@ -165,10 +184,18 @@
       line-height: 30px;
       min-height: 174px;
     }
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   .form__list--cat {
     padding-bottom: 52px;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
   }
 
   .form__row {

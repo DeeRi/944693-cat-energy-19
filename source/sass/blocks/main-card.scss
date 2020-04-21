@@ -3,7 +3,11 @@
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 22px;
+  padding-bottom: 22px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid $border-color;
 }
 
 .main-card__link--text {
@@ -68,11 +72,18 @@
 @media (min-width: $tablet-width) {
   .main-card {
     width: 324px;
+    border-top: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background: linear-gradient(to top, $sec-back-color, $sec-back-color 85%, $main-back-color 15%, $main-back-color);
+    background: linear-gradient(
+      to top,
+      $sec-back-color,
+      $sec-back-color 85%,
+      $main-back-color 15%,
+      $main-back-color
+    );
     padding-bottom: 40px;
     margin-bottom: 58px;
     text-align: center;
