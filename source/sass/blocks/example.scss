@@ -120,15 +120,16 @@
   .example {
     padding-top: 0;
     padding-bottom: 20px;
-    background: linear-gradient(to bottom, $main-back-color, $main-back-color 20%, $sec-back-color 20%, $sec-back-color);
+    background: linear-gradient(to bottom, #ffffff, #ffffff 150px, #f2f2f2 150px, #f2f2f2);
   }
 
   .example__heading {
-    padding-bottom: 140px;
+    padding-bottom: 145px;
   }
 
   .example__container {
     display: flex;
+    justify-content: space-between;
   }
 
   .example__wrapper {
@@ -137,6 +138,7 @@
 
   .example__wrapper--main {
     width: 445px;
+    padding-top: 47px;
   }
 
   .example__text {

@@ -5,6 +5,7 @@
 .slider__controller {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .slider__button {
@@ -21,8 +22,48 @@
   padding-bottom: 27px;
 }
 
+.slider__range {
+  width: 85px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: $main-back-color;
+  border: 1px solid $input-border;
+  padding: 3px;
+}
+
+.slider__value {
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: $decoration-color;
+}
+
 @media (min-width: $tablet-width) {
   .slider {
-    padding-left: 20px;
+    padding-left: 0;
   }
+
+  .slider__range {
+    width: 428px;
+    height: 10px;
+    background-color: $input-border;
+    position: relative;
+  }
+
+  .slider__value {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    border: 1px solid $input-border;
+    background: radial-gradient($decoration-color, $decoration-color 4px, $main-back-color 5px, $main-back-color 100%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    background: linear-gradient(to bottom, #ffffff, #ffffff 150px, #f2f2f2 150px, #f2f2f2);
+  }
+
 }
