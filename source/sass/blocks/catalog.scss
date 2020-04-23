@@ -48,10 +48,9 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0;
-    padding: 0;
     margin-bottom: 63px;
     background: linear-gradient(to bottom, transparent, transparent 50%, $decoration-color 50%, $decoration-color 54%, transparent 54%, transparent);
-    padding: 0 calc((100vw - 708px)/ 2);
+    padding: 0 calc((100vw - 708px) / 2);
   }
 
   .catalog__heading--sec span {
@@ -88,6 +87,6 @@
 
   .catalog__heading--sec {
     background: linear-gradient(to bottom, transparent, transparent 55%, $decoration-color 55%, $decoration-color 58%, transparent 58%, transparent);
-    padding: 0 calc((100vw - 1220px)/ 2);
+    padding: 0 calc((100vw - 1220px) / 2);
   }
 }

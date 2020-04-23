@@ -23,15 +23,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 33px;
-  background: linear-gradient(
-    to bottom,
-    transparent 0,
-    transparent 13px,
-    $decoration-color 13px,
-    $decoration-color 15px,
-    transparent 15px,
-    transparent
-  );
+  background: linear-gradient(to bottom, transparent 0, transparent 13px, $decoration-color 13px, $decoration-color 15px, transparent 15px, transparent);
 
   &--checkbox {
     margin-bottom: 42px;
@@ -158,15 +150,7 @@
   .form__heading {
     font-size: 36px;
     line-height: 36px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0,
-      transparent 24px,
-      $decoration-color 24px,
-      $decoration-color 26px,
-      transparent 26px,
-      transparent
-    );
+    background: linear-gradient(to bottom, transparent 0, transparent 24px, $decoration-color 24px, $decoration-color 26px, transparent 26px, transparent);
     padding: 0 calc((100vw - 708px) / 2);
 
     &--checkbox {
@@ -295,39 +279,54 @@
 
     &--main {
       margin: 0;
-      margin-bottom: 65px;
+      padding-bottom: 67px;
     }
 
     &--comment {
-      margin-bottom: 69px;
+      margin-bottom: 0;
     }
 
     &--checkbox {
-      margin-bottom: 20px;
+      margin-bottom: 0;
+      padding-bottom: 71px;
     }
   }
 
   .form__heading {
-    background: linear-gradient(
-      to bottom,
-      transparent 0,
-      transparent 22px,
-      #68b738 22px,
-      #68b738 25px,
-      transparent 25px,
-      transparent
-    );
+    background: linear-gradient(to bottom, transparent 0, transparent 22px, $decoration-color 22px, $decoration-color 25px, transparent 25px, transparent);
     padding: 0 calc((100vw - 1220px) / 2);
+
+    &--owner {
+      margin-bottom: 73px;
+      background: linear-gradient(to bottom, transparent 0, transparent 21px, $decoration-color 21px, $decoration-color 25px, transparent 25px, transparent);
+    }
+
+    &--comment {
+      margin-bottom: 76px;
+    }
+
+    &--checkbox {
+      margin-bottom: 66px;
+    }
   }
 
-  .form__row {
+  .form__heading span {
+    padding: 0;
+  }
+
+  .form__input {
     margin: 0;
-    margin-bottom: 24px;
+    background-position: 96% 50%;
+
+    &--textarea {
+      width: 100%;
+    }
   }
 
   .form__wrapper--main {
     display: flex;
     justify-content: flex-start;
+    margin-left: 0;
   }
 
   .form__list {
@@ -335,6 +334,9 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 66px;
     }
 
     &--radio {
@@ -348,9 +350,11 @@
     }
 
     &--cat {
-      width: 47%;
       padding-bottom: 0;
+      padding-right: 0;
+      padding-left: 0;
       margin-right: 80px;
+      width: 47%;
     }
   }
 
@@ -364,7 +368,13 @@
     }
   }
 
+  .form__wrapper {
+    margin-left: 0;
+  }
+
   .form__button {
+    margin-left: 0;
+    margin-right: 82px;
     width: 568px;
   }
 }
