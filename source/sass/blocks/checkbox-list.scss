@@ -1,10 +1,10 @@
 .checkbox-list {
-  padding-left: 45px;
   padding-bottom: 0;
+  margin-left: 63px;
 }
 
 .checkbox-list__item {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   transition: all 0.3s ease;
 
   &:active,
@@ -59,11 +59,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 55px;
+    padding-left: 35px;
   }
 
   .checkbox-list__item {
-    padding-left: 60px;
+    padding-left: 40px;
     width: 50%;
     margin-bottom: 50px;
 

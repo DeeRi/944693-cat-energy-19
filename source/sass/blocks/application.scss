@@ -1,6 +1,6 @@
 .application {
   padding-top: 17px;
-  padding-bottom: 27px;
+  padding-bottom: 30px;
 }
 
 .application__container {
@@ -28,11 +28,12 @@
 @media (min-width: $tablet-width) {
   .application {
     padding-top: 49px;
-    padding-bottom: 75px;
+    padding-bottom: 74px;
   }
 
   .application__heading {
-    padding-bottom: 60px;
+    padding-bottom: 58px;
+    padding-left: 0;
   }
 
   .application__capture {
@@ -40,7 +41,7 @@
     line-height: 30px;
     padding-right: 300px;
     padding-left: 40px;
-    padding-bottom: 68px;
+    padding-bottom: 64px;
   }
 }
 
