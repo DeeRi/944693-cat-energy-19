@@ -62,7 +62,7 @@
 
   .sec-card__row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   .sec-card__value {
@@ -77,9 +77,18 @@
     border-right: none;
   }
 
+  .sec-card__row {
+    justify-content: space-between;
+  }
+
   .sec-card__order {
     margin: 0;
     margin-left: 39px;
+    margin-bottom: -3px;
     width: 245px;
+  }
+
+  .sec-card__value {
+    margin-left: 0;
   }
 }

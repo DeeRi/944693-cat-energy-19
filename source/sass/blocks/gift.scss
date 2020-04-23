@@ -1,6 +1,6 @@
 .gift {
   position: relative;
-  padding-top: 225px;
+  padding-top: 185px;
   padding-bottom: 45px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: center;
@@ -15,7 +15,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 32%;
+    top: 22%;
     left: 40%;
     height: 61px;
     width: 56px;
@@ -49,6 +49,7 @@
 
     &::before {
       left: 13%;
+      top: 32%;
     }
   }
 
