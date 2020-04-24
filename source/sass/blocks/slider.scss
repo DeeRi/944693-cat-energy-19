@@ -1,11 +1,22 @@
 .slider {
   background-color: $sec-back-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider__image {
+  padding-bottom: 27px;
+  width: 100%;
+  height: 267px;
 }
 
 .slider__controller {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 200px;
+  margin-top: 3px;
 }
 
 .slider__button {
@@ -16,19 +27,17 @@
   border: none;
   display: inline-block;
   background-color: $sec-back-color;
-}
-
-.slider__image {
-  padding-bottom: 27px;
+  padding: 0;
 }
 
 .slider__range {
-  width: 85px;
-  height: 15px;
+  width: 84px;
+  height: 14px;
   border-radius: 20px;
   background-color: $main-back-color;
   border: 1px solid $input-border;
   padding: 3px;
+  padding-left: 6px;
 }
 
 .slider__value {
@@ -36,24 +45,48 @@
   height: 100%;
   border-radius: 20px;
   background-color: $decoration-color;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .slider {
     padding-left: 0;
+    padding-top: 65px;
+    padding-bottom: 74px;
+    background: linear-gradient(to bottom, $main-back-color, $main-back-color 33%, $sec-back-color 33%, $sec-back-color);
+  }
+
+  .slider__image {
+    height: 545px;
+    width: 100%;
+  }
+
+  .slider__controller {
+    width: 75%;
+    margin-top: -20px;
+  }
+
+  .slider__button {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .slider__range {
     width: 428px;
-    height: 10px;
-    background-color: $input-border;
+    height: 6px;
+    background-color: $slider-range;
     position: relative;
+    margin-top: 3px;
   }
 
   .slider__value {
     position: absolute;
     top: -14px;
-    left: 50%;
+    left: 47%;
     width: 34px;
     height: 34px;
     border: 1px solid $input-border;
@@ -63,6 +96,13 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    background: linear-gradient(to bottom, $main-back-color $main-back-color 150px, $sec-back-color 150px, $sec-back-color);
+    padding: 0;
+    background: linear-gradient(to bottom, $main-back-color $main-back-color 155px, $sec-back-color 155px, $sec-back-color);
+  }
+
+  .slider__controller {
+    margin-top: 0;
+    width: 88%;
+    padding-left: 45px;
   }
 }
