@@ -24,6 +24,7 @@
 .contacts__address {
   line-height: 20px;
   font-size: 14px;
+  padding-left: 13px;
 }
 
 .contacts__street {
@@ -81,6 +82,7 @@
   }
 
   .contacts__address {
+    padding-left: 0;
     font-size: 16px;
     text-align: right;
   }

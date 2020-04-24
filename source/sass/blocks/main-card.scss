@@ -72,6 +72,8 @@
 @media (min-width: $tablet-width) {
   .main-card {
     width: 324px;
+    padding-left: 0;
+    padding-right: 0;
     border-top: none;
     display: flex;
     flex-direction: column;
@@ -167,8 +169,6 @@
   .main-card {
     width: 245px;
     margin-bottom: 63px;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .main-card__table {
