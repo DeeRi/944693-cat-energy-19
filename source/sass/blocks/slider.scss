@@ -62,13 +62,7 @@
     padding-left: 0;
     padding-top: 65px;
     padding-bottom: 74px;
-    background: linear-gradient(
-      to bottom,
-      $main-back-color,
-      $main-back-color 33%,
-      $sec-back-color 33%,
-      $sec-back-color
-    );
+    background: linear-gradient(to bottom, $main-back-color, $main-back-color 33%, $sec-back-color 33%, $sec-back-color);
   }
 
   .slider__image {
@@ -101,24 +95,14 @@
     width: 34px;
     height: 34px;
     border: 1px solid $input-border;
-    background: radial-gradient(
-      $decoration-color,
-      $decoration-color 4px,
-      $main-back-color 5px,
-      $main-back-color 100%
-    );
+    background: radial-gradient($decoration-color, $decoration-color 4px, $main-back-color 5px, $main-back-color 100%);
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider {
     padding: 0;
-    background: linear-gradient(
-      to bottom,
-      $main-back-color $main-back-color 155px,
-      $sec-back-color 155px,
-      $sec-back-color
-    );
+    background: linear-gradient(to bottom, $main-back-color, $main-back-color 155px, $sec-back-color 155px, $sec-back-color);
   }
 
   .slider__controller {
