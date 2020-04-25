@@ -29,6 +29,11 @@
   height: 41px;
   width: 140px;
   margin-top: 8px;
+  border-collapse: collapse;
+}
+
+.main-card__row {
+  border-bottom: 1px solid $catalog-border;
 }
 
 .main-card__name,

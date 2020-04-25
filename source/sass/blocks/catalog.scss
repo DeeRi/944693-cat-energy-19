@@ -103,11 +103,11 @@
 
   .catalog__heading--sec {
     background: linear-gradient(to bottom, transparent, transparent 17px, $decoration-color 17px, $decoration-color 20px, transparent 20px, transparent);
-    padding: 0 calc((100vw - 1220px) / 2);
-    margin-bottom: 74px;
+    padding: 0 calc((100vw - 1220px) / 2 - 40px);
+    margin-bottom: 78px;
   }
 
   .catalog__heading--sec span {
-    padding-left: 0;
+    padding-left: 40px;
   }
 }

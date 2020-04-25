@@ -294,11 +294,10 @@
 
   .form__heading {
     background: linear-gradient(to bottom, transparent 0, transparent 22px, $decoration-color 22px, $decoration-color 25px, transparent 25px, transparent);
-    padding: 0 calc((100vw - 1220px) / 2);
+    padding: 0 calc((100vw - 1220px) / 2 - 40px);
 
     &--owner {
       margin-bottom: 73px;
-      background: linear-gradient(to bottom, transparent 0, transparent 21px, $decoration-color 21px, $decoration-color 25px, transparent 25px, transparent);
     }
 
     &--comment {
@@ -312,6 +311,8 @@
 
   .form__heading span {
     padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .form__input {

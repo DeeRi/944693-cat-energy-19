@@ -1,5 +1,5 @@
 .sec-card {
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $catalog-border;
   padding-top: 12px;
 }
 
@@ -31,7 +31,6 @@
     padding: 28px 37px;
     padding-top: 25px;
     box-sizing: border-box;
-    border: 1px solid $border-color;
     border-bottom: none;
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +38,7 @@
     align-items: center;
 
     &:last-child {
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid $catalog-border;
     }
   }
 
@@ -72,7 +71,7 @@
 
 @media (min-width: $desktop-width) {
   .sec-card {
-    padding: 16px 0;
+    padding: 14px 0;
     border-left: none;
     border-right: none;
   }
@@ -84,11 +83,13 @@
   .sec-card__order {
     margin: 0;
     margin-left: 39px;
-    margin-bottom: -4px;
+    margin-bottom: -1px;
     width: 245px;
   }
 
   .sec-card__value {
+    font-size: 16px;
+    line-height: 20px;
     margin-left: 0;
   }
 }
