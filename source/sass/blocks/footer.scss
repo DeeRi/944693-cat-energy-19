@@ -13,11 +13,16 @@
 }
 
 .footer__logo {
-  padding-bottom: 31px;
+  padding-bottom: 28px;
+}
+
+.footer__social {
+  padding-top: 23px;
+  padding-bottom: 16px;
 }
 
 .footer__academy {
-  padding-top: 31px;
+  padding-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,6 +32,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 37px;
+  }
+
+  .footer__social {
+    padding-top: 18px;
   }
 
   .footer__academy,

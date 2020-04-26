@@ -4,22 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог товаров</title>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+          </div>
     <header class="header">
       <div class="header__container container">
         <div class="header__menu">
+          <div class="logo">
           <a class="logo__link" href="index.html">
             <picture>
-              <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
-              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-              <img srcset="img/logo-mobile.svg" alt="Logo" width="191" height="39">
+              <source
+                srcset="img/logo-desktop.svg"
+                media="(min-width: 1300px)"
+              />
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)" />
+              <img
+                class="logo__image"
+                src="img/logo-mobile.svg"
+                alt="Logo"
+                width="191"
+                height="39"
+              />
             </picture>
           </a>
+          </div>
           <button class="header__toggle menu-button" type="button"></button>
         </div>
-        <nav class="header__navigation">
+        <nav
+          class="header__navigation header__navigation--closed header__navigation--nojs"
+        >
           <ul class="header__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -37,10 +56,8 @@
 
     <main>
       <section class="section catalog">
-        <div class="container">
+        <div class="container catalog__container">
           <h1 class="section__heading catalog__heading">Каталог продукции</h1>
-          <h2 class="catalog__heading visually-hidden">Основные товары</h2>
-
           <ul class="catalog__list catalog__list--main">
             <li class="catalog__item main-card main-card--small">
               <a class="main-card__link" href="">
@@ -53,7 +70,7 @@
                       img/chicken-small-tablet@1x.png 1x,
                       img/chicken-small-tablet@2x.png 2x
                     " media="(min-width: 768px)">
-                  <img class="main-card__image" srcset="
+                  <img class="main-card__image main-card__image--small" srcset="
                       img/chicken-small-mobile@1x.jpg 1x,
                       img/chicken-small-mobile@2x.jpg 2x
                     " src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
@@ -129,7 +146,7 @@
                       img/fish-small-tablet@1x.png 1x,
                       img/fish-small-tablet@2x.png 2x
                     " media="(min-width: 768px)">
-                  <img class="main-card__image" src="img/fish-small-mobile@1x.jpg" srcset="
+                  <img class="main-card__image main-card__image--small" src="img/fish-small-mobile@1x.jpg" srcset="
                       img/fish-small-mobile@1x.jpg 1x,
                       img/fish-small-mobile@2x.jpg 2x
                     " alt="Cat Energy PRO 500 г">
@@ -207,7 +224,7 @@
                       img/buckwheat-small-tablet@1x.png 1x,
                       img/buckwheat-small-tablet@2x.png 2x
                     " media="(min-width: 768px)">
-                  <img class="main-card__image" srcset="
+                  <img class="main-card__image main-card__image--small" srcset="
                       img/buckwheat-small-mobile@1x.jpg 1x,
                       img/buckwheat-small-mobile@2x.jpg 2x
                     " src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
@@ -285,7 +302,7 @@
                       img/rice-small-tablet@1x.png 1x,
                       img/rice-small-tablet@2x.png 2x
                     " media="(min-width: 768px)">
-                  <img class="main-card__image" src="img/rice-small-mobile@1x.jpg" srcset="
+                  <img class="main-card__image main-card__image--small" src="img/rice-small-mobile@1x.jpg" srcset="
                       img/rice-small-mobile@1x.jpg 1x,
                       img/rice-small-mobile@2x.jpg 2x
                     " alt="Cat Energy PRO 500 г">
@@ -314,7 +331,6 @@
             </li>
 
             <li class="catalog__item main-card main-card--more">
-              <img class="main-card__image" src="img/icon-plus.svg" width="61" height="61" alt="">
               <h3 class="main-card__heading">Показать еще 100500 товаров</h3>
               <p class="main-card__capture">
                 На самом деле вкусов гораздо больше!
@@ -322,10 +338,13 @@
               <a class="main-card__order button button--secondary" href="">Показать все</a>
             </li>
           </ul>
-
-          <h2 class="catalog__heading catalog__heading--sec">
+        </div>
+        <h2 class="catalog__heading catalog__heading--sec">
+          <span>
             Дополнительные товары
-          </h2>
+          </span>
+        </h2>
+        <div class="container">
           <div class="catalog__wrapper">
             <ul class="catalog__list catalog__list--secondary">
               <li class="catalog__item sec-card">
@@ -394,9 +413,10 @@
             </ul>
             <div class="gift">
               <h2 class="gift__heading visually-hidden">Акция</h2>
-              <span class="gift__icon"></span>
               <p class="gift__capture">
-                Закажите все и получите чехол для кота в подарок!
+                Закажите все <br />
+                и получите чехол для <br />
+                кота в подарок!
               </p>
             </div>
           </div>
@@ -426,22 +446,51 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__logo logo">
-          <a class="logo__link"><img class="logo__image" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24"></a>
+          <a class="logo__link" href="index.html">
+          <svg
+          class="logo__image logo__image--simplified"
+          width="128"
+          height="24">
+          <use xlink:href="#icon-logo-footer"></use></svg>
+        </a>
         </div>
         <ul class="footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="">VK</a>
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+              <svg class="social__icon social__icon--vk" width="22" height="12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--inst" href="">Inst</a>
+            <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy">
+              <svg
+                class="social__icon social__icon--inst"
+                width="17"
+                height="17"
+              >
+                <use xlink:href="#icon-insta"></use></svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--fb" href="">Facebook</a>
+            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"
+              ><svg
+                class="social__icon social__icon--fb"
+                width="10"
+                height="19"
+              >
+                <use xlink:href="#icon-fb"></use></svg></a>
           </li>
         </ul>
         <div class="footer__academy academy">
-          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="academy__text">HTML Academy</span><img class="academy__image" src="img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"></a>
+          <a
+            class="academy__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          >
+            <span class="academy__text">HTML Academy</span>
+            <svg class="academy__icon" width="40" height="50">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

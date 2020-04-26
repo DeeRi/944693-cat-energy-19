@@ -1,12 +1,63 @@
 .social {
   @include reset-list;
   display: flex;
+  padding-left: 72px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 
 .social__item {
-  margin-right: 29px;
+  margin-right: 38px;
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.social__icon {
+  fill: $social-icon;
+
+  &:hover {
+    fill: $decoration-color;
+  }
+
+  &:active,
+  &focus {
+    fill: $decoration-color;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+    align-items: center;
+    width: auto;
+    padding-left: 19px;
+    padding-top: 20px;
+  }
+
+  .social__item {
+    margin-right: 29px;
+  }
+
+  .social__icon {
+    &--inst {
+      height: 23px;
+      width: 23px;
+    }
+
+    &--vk {
+      height: 16px;
+      width: 30px;
+    }
+
+    &--fb {
+      height: 28px;
+      width: 14px;
+    }
   }
 }

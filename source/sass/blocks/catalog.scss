@@ -2,23 +2,41 @@
   background-color: $main-back-color;
 }
 
+.catalog__container {
+  min-width: 320px;
+}
+
 .catalog__heading {
   padding-top: 13px;
   padding-bottom: 25px;
+  padding-left: 20px;
 }
 
 .catalog__list {
   @include reset-list;
   padding-top: 4px;
+
+  &--secondary {
+    margin-bottom: 40px;
+  }
 }
 
 .catalog__heading--sec {
   @include oswald-normal;
+  position: relative;
   font-size: 24px;
   line-height: 24px;
   color: $sec-text-color;
-  margin: 0;
-  padding-bottom: 34px;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: linear-gradient(to bottom, transparent, transparent 54%, $decoration-color 54%, $decoration-color 57%, transparent 57%, transparent);
+}
+
+.catalog__heading--sec span {
+  background-color: $main-back-color;
+  display: inline-block;
+  padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,21 +46,68 @@
 
   .catalog__heading {
     padding-bottom: 83px;
+    padding-left: 0;
   }
 
-  .catalog__list--main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .catalog__heading--sec {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 73px;
+    background: linear-gradient(to bottom, transparent, transparent 50%, $decoration-color 50%, $decoration-color 54%, transparent 54%, transparent);
+    padding: 0 calc((100vw - 708px) / 2);
+  }
+
+  .catalog__heading--sec span {
+    padding: 0 36px;
+  }
+
+  .catalog__list {
+    &--main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &--secondary {
+      margin-bottom: 62px;
+    }
+  }
+
+  .catalog__wrapper {
+    padding-bottom: 76px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding-top: 55px;
+    padding-top: 59px;
+  }
+
+  .catalog__heading {
+    padding-bottom: 80px;
   }
 
   .catalog__wrapper {
     display: flex;
+    padding-bottom: 89px;
+  }
+
+  .catalog__list--secondary {
+    width: 74%;
+    margin-right: 80px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .catalog__heading--sec {
+    background: linear-gradient(to bottom, transparent, transparent 17px, $decoration-color 17px, $decoration-color 20px, transparent 20px, transparent);
+    padding: 0 calc((100vw - 1220px) / 2 - 40px);
+    margin-bottom: 78px;
+  }
+
+  .catalog__heading--sec span {
+    padding-left: 40px;
   }
 }

@@ -7,8 +7,10 @@
   color: $third-text-color;
   text-align: center;
   width: 280px;
+  line-height: 20px;
+  font-size: 16px;
   padding-top: 13px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 
   &:hover {
     background-color: $button-action;

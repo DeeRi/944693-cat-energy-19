@@ -1,5 +1,11 @@
 .header {
   background-color: $main-back-color;
+  position: relative;
+  border-bottom: 1px solid $border-color;
+}
+
+.header__container {
+  min-width: 320px;
 }
 
 .header__menu {
@@ -8,17 +14,29 @@
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.header__navigation {
-  display: none;
+@media (max-width: $mobile-width-only) {
+  .header__navigation .site-list__item {
+    display: block;
+  }
 
-  &--open {
+  .header__navigation--closed .site-list__item {
+    display: none;
+  }
+
+  .header__navigation--nojs .site-list__item {
     display: block;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .header {
+    border-bottom: none;
+  }
+
   .header__container {
     display: flex;
     justify-content: space-between;

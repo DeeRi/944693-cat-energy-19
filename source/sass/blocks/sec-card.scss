@@ -1,6 +1,6 @@
 .sec-card {
-  border-top: 1px solid $border-color;
-  padding-top: 14px;
+  border-top: 1px solid $catalog-border;
+  padding-top: 12px;
 }
 
 .sec-card__heading {
@@ -8,11 +8,18 @@
   text-transform: uppercase;
   color: $sec-card-heading;
   line-height: 16px;
+  padding-bottom: 7px;
   margin: 0;
 }
 
 .sec-card__information {
-  padding-bottom: 14px;
+  width: 100%;
+  padding-bottom: 9px;
+}
+
+.sec-card__row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .sec-card__order {
@@ -22,8 +29,8 @@
 @media (min-width: $tablet-width) {
   .sec-card {
     padding: 28px 37px;
+    padding-top: 25px;
     box-sizing: border-box;
-    border: 1px solid $border-color;
     border-bottom: none;
     display: flex;
     flex-wrap: wrap;
@@ -31,17 +38,58 @@
     align-items: center;
 
     &:last-child {
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid $catalog-border;
     }
+  }
 
-    .sec-card__information {
-      padding-bottom: 0;
-    }
+  .sec-card__heading {
+    font-size: 20px;
+    line-height: 20px;
+    min-width: 325px;
+  }
 
-    .sec-card__order {
-      margin: 0;
-      margin-top: 27px;
-      width: 633px;
-    }
+  .sec-card__information {
+    padding-bottom: 0;
+    width: 284px;
+  }
+
+  .sec-card__order {
+    margin: 0;
+    margin-top: 16px;
+    width: 633px;
+  }
+
+  .sec-card__row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sec-card__value {
+    margin-left: 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sec-card {
+    padding: 14px 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .sec-card__row {
+    justify-content: space-between;
+  }
+
+  .sec-card__order {
+    margin: 0;
+    margin-left: 39px;
+    margin-bottom: -1px;
+    width: 245px;
+  }
+
+  .sec-card__value {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 0;
   }
 }

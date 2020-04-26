@@ -16,7 +16,7 @@ $menu-active: rgba(17, 17, 17, 0.3);
 $menu-white-hover: rgba(255, 255, 255, 0.6);
 $menu-white-active: rgba(255, 255, 255, 0.3);
 
-$decoration-color: #68b738;
+$decoration-color: rgb(104, 183, 56);
 $button-action: #5eaa2f;
 
 $button-sec: #f2f2f2;
@@ -28,10 +28,19 @@ $program-link-action: rgba(17, 17, 17, 0.3);
 $academy-action: rgba(68, 68, 68, 0.3);
 
 $input-border: #cdcdcd;
+$input-border-light: rgba(205, 205, 205, 0.5);
+$input-active: #444444;
+$input-hover: #bababa;
 $input-error: #ff8282;
 
 $sec-card-heading: #222222;
+$catalog-border: #cdcdcd;
 
+$example-box: #cdcdcd;
+$slider-range: #cdcdcd;
+
+$social-icon: #666666;
 //width
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1300px;

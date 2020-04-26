@@ -24,6 +24,7 @@
 .contacts__address {
   line-height: 20px;
   font-size: 14px;
+  padding-left: 13px;
 }
 
 .contacts__street {
@@ -81,6 +82,7 @@
   }
 
   .contacts__address {
+    padding-left: 0;
     font-size: 16px;
     text-align: right;
   }
@@ -110,8 +112,8 @@
     background-color: $main-back-color;
     width: 570px;
     position: absolute;
-    top: 95px;
-    left: 110px;
+    top: 92px;
+    left: 40px;
     z-index: 10;
     padding-top: 66px;
     padding-bottom: 59px;

@@ -1,0 +1,121 @@
+.checkbox-list {
+  padding-bottom: 0;
+  margin-left: 63px;
+}
+
+.checkbox-list__item {
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.checkbox-list__title {
+  position: relative;
+
+  &::before {
+    content: "";
+    box-sizing: border-box;
+    left: -43px;
+    top: -3px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    padding: 9px;
+    background-color: $main-back-color;
+    border: 1px solid $input-border;
+  }
+
+  &:hover::before {
+    border-color: $input-hover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 2px;
+    width: 15px;
+    height: 10px;
+    border-bottom: 1px solid $decoration-color;
+    border-left: 1px solid $decoration-color;
+    transform: rotate(-45deg);
+  }
+}
+
+.checkbox-list__box + .checkbox-list__title::after {
+  content: none;
+}
+
+.checkbox-list__box:checked + .checkbox-list__title::after {
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+  }
+
+  .checkbox-list__item {
+    padding-left: 40px;
+    width: 50%;
+    margin-bottom: 50px;
+
+    &:nth-child(3),
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:first-child,
+    &:nth-child(3) {
+      padding-left: 0;
+    }
+  }
+
+  .checkbox-list__title::before {
+    width: 40px;
+    height: 40px;
+    left: -57px;
+    top: -5px;
+  }
+
+  .checkbox-list__title::after {
+    width: 20px;
+    height: 10px;
+    left: -47px;
+    top: 6px;
+    border-bottom: 2px solid $decoration-color;
+    border-left: 2px solid $decoration-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox-list {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: right;
+    justify-content: space-between;
+  }
+
+  .checkbox-list__title {
+    margin: 0;
+  }
+
+  .checkbox-list__item {
+    width: 245px;
+    margin: 0;
+    display: flex;
+    padding-left: 60px;
+
+    &:first-child,
+    &:nth-child(3n) {
+      padding-left: 60px;
+    }
+  }
+}
