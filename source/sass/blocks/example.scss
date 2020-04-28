@@ -1,6 +1,6 @@
 .example {
   background-color: $sec-back-color;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-bottom: 33px;
 }
 
@@ -128,8 +128,8 @@
   .example {
     display: flex;
     padding-top: 0;
-    padding-bottom: 75px;
-    background: linear-gradient(to bottom, $main-back-color, $main-back-color 155px, $sec-back-color 155px, $sec-back-color);
+    padding-bottom: 69px;
+    background: linear-gradient(to bottom, $main-back-color, $main-back-color 183px, $sec-back-color 183px, $sec-back-color);
   }
 
   .example .container {

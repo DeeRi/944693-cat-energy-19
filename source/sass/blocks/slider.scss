@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
+  width: 198px;
   margin-top: 3px;
 }
 
@@ -61,7 +61,7 @@
   .slider {
     padding-left: 0;
     padding-top: 65px;
-    padding-bottom: 74px;
+    padding-bottom: 68px;
     background: linear-gradient(to bottom, $main-back-color, $main-back-color 33%, $sec-back-color 33%, $sec-back-color);
   }
 
@@ -77,7 +77,9 @@
 
   .slider__button {
     font-size: 20px;
+    padding-bottom: 6px;
     line-height: 20px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
   }
 
   .slider__range {
@@ -102,7 +104,7 @@
 @media (min-width: $desktop-width) {
   .slider {
     padding: 0;
-    background: linear-gradient(to bottom, $main-back-color, $main-back-color 155px, $sec-back-color 155px, $sec-back-color);
+    background: linear-gradient(to bottom, $main-back-color, $main-back-color 183px, $sec-back-color 183px, $sec-back-color);
   }
 
   .slider__controller {

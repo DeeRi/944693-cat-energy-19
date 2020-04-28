@@ -1,6 +1,6 @@
 .features {
   padding-top: 12px;
-  padding-bottom: 42px;
+  padding-bottom: 46px;
 }
 
 .features__heading {
@@ -85,6 +85,7 @@
   .features {
     padding-top: 40px;
     padding-bottom: 110px;
+    border-bottom: 1px solid $border-color;
   }
 
   .features__text br {
@@ -165,6 +166,7 @@
   .features {
     padding-top: 73px;
     padding-bottom: 80px;
+    border: none;
   }
 
   .features__heading {
