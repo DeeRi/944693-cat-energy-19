@@ -91,7 +91,6 @@
     background-position: right;
     padding-top: 103px;
     padding-bottom: 200px;
-    position: relative;
 
     &::before {
       content: "";
@@ -112,6 +111,7 @@
 
   .promo__container {
     padding-left: 80px;
+    position: relative;
   }
 
   .promo__capture {
@@ -119,8 +119,8 @@
   }
 
   .promo__image {
-    top: 20px;
-    left: 38%;
+    top: -80px;
+    left: 37%;
     width: 552px;
     height: 499px;
   }
