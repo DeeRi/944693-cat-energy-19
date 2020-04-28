@@ -2,6 +2,7 @@ let burger = document.querySelector(".menu-button");
 let siteNav = document.querySelector(".header__navigation");
 
 siteNav.classList.remove("header__navigation--nojs");
+burger.classList.remove("visually-hidden");
 
 burger.addEventListener("click", function () {
   if (burger.classList.contains("menu-button--clicked")) {

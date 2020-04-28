@@ -114,6 +114,7 @@
     position: absolute;
     top: 92px;
     left: 38px;
+    left: calc((100vw - 1220px) / 2);
     z-index: 10;
     padding-top: 66px;
     padding-bottom: 59px;

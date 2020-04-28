@@ -129,11 +129,9 @@
     display: flex;
     padding-top: 0;
     padding-bottom: 69px;
+    padding-left: calc((100vw - 1220px) / 2);
+    padding-right: calc((100vw - 1220px) / 2);
     background: linear-gradient(to bottom, $main-back-color, $main-back-color 183px, $sec-back-color 183px, $sec-back-color);
-  }
-
-  .example .container {
-    padding-left: 40px;
   }
 
   .example .container--slider {

@@ -19,15 +19,15 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .header__navigation .site-list__item {
+  .header__navigation .header__item {
     display: block;
   }
 
-  .header__navigation--closed .site-list__item {
+  .header__navigation--closed .header__item {
     display: none;
   }
 
-  .header__navigation--nojs .site-list__item {
+  .header__navigation--nojs .header__item {
     display: block;
   }
 }
