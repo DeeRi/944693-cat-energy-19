@@ -104,7 +104,14 @@
 @media (min-width: $desktop-width) {
   .slider {
     padding: 0;
+    padding-left: 70px;
+    display: flex;
+    align-items: flex-end;
     background: linear-gradient(to bottom, $main-back-color, $main-back-color 183px, $sec-back-color 183px, $sec-back-color);
+  }
+
+  .slider__image {
+    padding-left: 55px;
   }
 
   .slider__controller {
