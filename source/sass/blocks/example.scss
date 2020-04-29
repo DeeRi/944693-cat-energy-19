@@ -1,6 +1,6 @@
 .example {
   background-color: $sec-back-color;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-bottom: 33px;
 }
 
@@ -128,16 +128,14 @@
   .example {
     display: flex;
     padding-top: 0;
-    padding-bottom: 75px;
-    background: linear-gradient(to bottom, $main-back-color, $main-back-color 155px, $sec-back-color 155px, $sec-back-color);
-  }
-
-  .example .container {
-    padding-left: 40px;
+    padding-bottom: 69px;
+    padding-left: calc((100vw - 1220px) / 2);
+    padding-right: calc((100vw - 1220px) / 2);
+    background: linear-gradient(to bottom, $main-back-color, $main-back-color 183px, $sec-back-color 183px, $sec-back-color);
   }
 
   .example .container--slider {
-    padding-left: 70px;
+    padding-left: 0;
   }
 
   .example__heading {

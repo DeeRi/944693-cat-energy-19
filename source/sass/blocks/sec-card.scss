@@ -29,7 +29,7 @@
 @media (min-width: $tablet-width) {
   .sec-card {
     padding: 28px 37px;
-    padding-top: 25px;
+    padding-top: 24px;
     box-sizing: border-box;
     border-bottom: none;
     display: flex;
@@ -50,7 +50,7 @@
 
   .sec-card__information {
     padding-bottom: 0;
-    width: 284px;
+    width: auto;
   }
 
   .sec-card__order {
@@ -65,15 +65,22 @@
   }
 
   .sec-card__value {
-    margin-left: 53px;
+    margin-left: 45px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .sec-card {
     padding: 14px 0;
+    padding-bottom: 15px;
     border-left: none;
     border-right: none;
+  }
+
+  .sec-card__information {
+    width: 287px;
   }
 
   .sec-card__row {
