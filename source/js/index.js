@@ -18,15 +18,15 @@ let myMap;
 
 ymaps.ready(function () {
   var myMap = new ymaps.Map(
-      "map",
-      {
-        center: [59.940262328564486, 30.323117499999945],
-        zoom: 15,
-      },
-      {
-        searchControlProvider: "yandex#search",
-      }
-    ),
+    "map",
+    {
+      center: [59.940262328564486, 30.323117499999945],
+      zoom: 15,
+    },
+    {
+      searchControlProvider: "yandex#search",
+    }
+  ),
     myPlacemark = new ymaps.Placemark(
       myMap.getCenter(),
       {
